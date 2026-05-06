@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — RAMAG Integración e Ingeniería</title>
+  <link rel="icon" type="image/png" href="img/ramag_icon.png" />
+  <meta name="description" content="Contáctanos: Calle El Laurel 500-A5, La Alameda, Jalisco. Tel: +52 33 1224 5803 · contacto@ramag.mx · Lun–Vie 9:00–18:00." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary: '#0C3B52', 'primary-dark': '#082A3A',
+          'primary-light': '#175D8A', accent: '#00B9D8',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-poppins">
+
+  <!-- Top Bar -->
+  <div id="top-bar" class="hidden md:block">
+    <div class="topbar-inner">
+      <div class="flex items-center gap-5">
+        <a href="tel:+523312245803"><i class="fas fa-phone-alt mr-1"></i> +52 33 1224 5803</a>
+        <a href="mailto:contacto@ramag.mx"><i class="fas fa-envelope mr-1"></i> contacto@ramag.mx</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-clock mr-1"></i> Lun–Vie 9:00–18:00</span>
+        <a data-wa="Hola, quisiera solicitar una cotización." class="text-accent font-semibold">
+          <i class="fas fa-comments mr-1"></i> Solicitar cotización
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html"      class="nav-link">Inicio</a>
+        <a href="servicios.html"  class="nav-link">Servicios</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
+        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="clientes.html"   class="nav-link">Clientes</a>
+        <a href="nosotros.html"   class="nav-link">Nosotros</a>
+        <a href="contacto.html"   class="nav-link">Contacto</a>
+      </div>
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
+        <i class="fab fa-whatsapp mr-2"></i>Cotizar por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <span>Contacto</span>
+      </div>
+      <h1>Contáctanos</h1>
+      <p>Estamos listos para atenderte. Cuéntanos tu necesidad y nuestro equipo técnico te dará la respuesta más adecuada.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid animate-up">
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <div style="margin-bottom:2rem">
+            <span class="eyebrow">Formulario de contacto</span>
+            <h2 class="section-heading">Envíanos tu consulta</h2>
+            <p style="font-size:.88rem;color:var(--text-light);margin-top:.5rem">Al enviar el formulario, abriremos WhatsApp con tu mensaje listo para enviarnos directamente.</p>
+          </div>
+          <form id="cotiza-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre completo *</label>
+              <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="empresa">Empresa / Organización</label>
+              <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa (opcional)" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="servicio">Servicio o producto de interés *</label>
+              <select class="form-select" id="servicio" name="servicio" required>
+                <option value="">— Selecciona una opción —</option>
+                <optgroup label="Servicios">
+                  <option>Diagnóstico y reparación de reductores</option>
+                  <option>Ensamble de bandas modulares</option>
+                  <option>Diseño y desarrollo de ingeniería</option>
+                  <option>Renovación de transportadores</option>
+                  <option>Fabricación de equipos</option>
+                  <option>Póliza de mantenimiento</option>
+                </optgroup>
+                <optgroup label="Productos">
+                  <option>Motorreductores SEW-Eurodrive</option>
+                  <option>Bandas modulares ULTRA-TUFF (Safari Belting)</option>
+                  <option>Cadenas de ingeniería (SEID / Webster / PII)</option>
+                  <option>Bandas transportadoras (BeltService)</option>
+                  <option>Componentes de transmisión (Martin / Regal Rexnord)</option>
+                </optgroup>
+                <option value="Consulta general">Consulta general</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="detalle">Detalle de tu consulta *</label>
+              <textarea class="form-textarea" id="detalle" name="detalle" placeholder="Describe tu necesidad: modelo, medidas, aplicación, cantidad, urgencia..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-wa" style="width:100%;justify-content:center">
+              <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+            </button>
+            <p style="font-size:.75rem;color:var(--text-muted);text-align:center;margin-top:.75rem">
+              <i class="fas fa-lock" style="font-size:.65rem"></i>
+              Tu información es privada y solo se usará para atender tu consulta.
+            </p>
+          </form>
+        </div>
+
+        <!-- Info Card -->
+        <div>
+          <div class="contact-info-card">
+            <div class="cic-inner">
+              <span class="eyebrow">Información de contacto</span>
+              <h3 style="font-size:1.3rem;font-weight:700;color:white;margin-bottom:1.5rem">Estamos cerca de ti</h3>
+
+              <div class="cic-item">
+                <div class="cic-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <div class="cic-label">Dirección</div>
+                  <div class="cic-value">
+                    Calle El Laurel 500-A5<br>
+                    La Alameda, 45679<br>
+                    Jalisco, México
+                    <br>
+                    <a href="https://maps.app.goo.gl/8P4XAdqANLe5EKXn8" target="_blank" rel="noopener"
+                       style="color:var(--accent);font-size:.8rem;display:inline-flex;align-items:center;gap:.3rem;margin-top:.4rem">
+                      <i class="fas fa-directions"></i> Cómo llegar
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cic-item">
+                <div class="cic-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <div class="cic-label">Teléfono</div>
+                  <div class="cic-value">
+                    <a href="tel:+523312245803">+52 33 1224 5803</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cic-item">
+                <div class="cic-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div class="cic-label">Correo electrónico</div>
+                  <div class="cic-value">
+                    <a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cic-item" style="margin-bottom:0">
+                <div class="cic-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="cic-label">Horario de atención</div>
+                  <div class="cic-value">
+                    Lunes a Viernes<br>
+                    9:00 am — 6:00 pm
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick WA CTAs -->
+          <div style="margin-top:1.25rem;display:flex;flex-direction:column;gap:.75rem">
+            <p style="font-size:.8rem;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.08em">Contacto rápido por WhatsApp</p>
+            <a data-wa="Hola RAMAG, necesito una cotización urgente." class="btn btn-wa" style="justify-content:flex-start">
+              <i class="fab fa-whatsapp"></i> Cotización urgente
+            </a>
+            <a data-wa="Hola RAMAG, tengo un reductor averiado y necesito diagnóstico." class="btn btn-wa" style="justify-content:flex-start">
+              <i class="fab fa-whatsapp"></i> Reductor averiado — diagnóstico
+            </a>
+            <a data-wa="Hola RAMAG, necesito información sobre pólizas de mantenimiento." class="btn btn-wa" style="justify-content:flex-start">
+              <i class="fab fa-whatsapp"></i> Consultar póliza de mantenimiento
+            </a>
+            <a data-wa="Hola RAMAG, busco una pieza o componente específico." class="btn btn-wa" style="justify-content:flex-start">
+              <i class="fab fa-whatsapp"></i> Buscar pieza / componente
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--surface" style="padding-top:0">
+    <div class="section-inner animate-up">
+      <div style="margin-bottom:1.5rem">
+        <span class="eyebrow">Ubicación</span>
+        <h2 class="section-heading">Encuéntranos</h2>
+        <p class="section-sub">Calle El Laurel 500-A5 · La Alameda · Jalisco</p>
+      </div>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4472.301004309128!2d-103.25487422413767!3d20.4872969061544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4a3c847ed2bf%3A0xb3a17d89431b6dc!2sRamag%20Industrial!5e1!3m2!1ses-419!2smx!4v1776733794547!5m2!1ses-419!2smx"
+          width="100%"
+          height="420"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación RAMAG Industrial">
+        </iframe>
+      </div>
+      <div style="margin-top:1.25rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+        <a href="https://maps.app.goo.gl/8P4XAdqANLe5EKXn8" target="_blank" rel="noopener" class="btn btn-dark">
+          <i class="fas fa-directions"></i> Abrir en Google Maps
+        </a>
+        <a data-wa="Hola RAMAG, ¿podrían indicarme cómo llegar a sus instalaciones?" class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> ¿Cómo llegar?
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 class="section-heading section-heading--center" style="margin:0 auto">¿Tienes dudas?</h2>
+      </div>
+      <div style="max-width:720px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:1rem" class="animate-up delay-1">
+        <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;cursor:pointer">
+          <summary style="font-size:.92rem;font-weight:700;color:var(--dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+            ¿Atienden pedidos urgentes o con tiempos de entrega cortos?
+            <i class="fas fa-plus" style="color:var(--accent);flex-shrink:0"></i>
+          </summary>
+          <p style="font-size:.85rem;color:var(--text-light);margin-top:1rem;line-height:1.65">
+            Sí. Contamos con stock de partes críticas y programas de expeditación para órdenes urgentes.
+            Escríbenos por WhatsApp con el número de modelo y te decimos disponibilidad inmediata.
+          </p>
+        </details>
+        <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;cursor:pointer">
+          <summary style="font-size:.92rem;font-weight:700;color:var(--dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+            ¿Trabajan con presupuestos o pólizas de mantenimiento anuales?
+            <i class="fas fa-plus" style="color:var(--accent);flex-shrink:0"></i>
+          </summary>
+          <p style="font-size:.85rem;color:var(--text-light);margin-top:1rem;line-height:1.65">
+            Absolutamente. Ofrecemos pólizas de mantenimiento preventivo y correctivo con visitas regulares,
+            stock dedicado de refacciones y reportes de condición de equipos. Contáctanos para diseñar
+            un programa a la medida de tu planta.
+          </p>
+        </details>
+        <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;cursor:pointer">
+          <summary style="font-size:.92rem;font-weight:700;color:var(--dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+            ¿Pueden sustituir marcas como Intralox, Rexnord o SKF?
+            <i class="fas fa-plus" style="color:var(--accent);flex-shrink:0"></i>
+          </summary>
+          <p style="font-size:.85rem;color:var(--text-light);margin-top:1rem;line-height:1.65">
+            En muchos casos sí. Realizamos homologación técnica para identificar equivalencias entre marcas,
+            lo que puede representar ahorros importantes sin sacrificar calidad ni rendimiento.
+            Compártenos el número de pieza o especificaciones para analizarlo.
+          </p>
+        </details>
+        <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;cursor:pointer">
+          <summary style="font-size:.92rem;font-weight:700;color:var(--dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+            ¿Tienen servicio en campo fuera de Jalisco?
+            <i class="fas fa-plus" style="color:var(--accent);flex-shrink:0"></i>
+          </summary>
+          <p style="font-size:.85rem;color:var(--text-light);margin-top:1rem;line-height:1.65">
+            El servicio en campo depende de las condiciones y la ubicación. Consulta con nosotros la
+            disponibilidad para tu región. Los proyectos de mayor envergadura los evaluamos caso por caso.
+          </p>
+        </details>
+      </div>
+      <div class="text-center mt-8 animate-up delay-2">
+        <p style="color:var(--text-light);font-size:.9rem">¿No encuentras tu pregunta aquí?</p>
+        <a data-wa="Hola RAMAG, tengo una pregunta sobre sus servicios." class="btn btn-dark" style="margin-top:.75rem">
+          <i class="fab fa-whatsapp"></i> Pregúntanos directamente
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <p class="footer-desc">Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
+          <a href="servicios.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Servicios</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Productos</a>
+          <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
+          <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Calle El Laurel 500-A5, La Alameda, Jal.</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+523312245803">+52 33 1224 5803</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Vie · 9:00 – 18:00 h</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RAMAG Integración e Ingeniería. Todos los derechos reservados.</span>
+      <a href="https://ramag.mx">ramag.mx</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Hola RAMAG, quisiera ponerme en contacto con ustedes." aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

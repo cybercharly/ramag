@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — RAMAG Integración e Ingeniería</title>
+  <link rel="icon" type="image/png" href="img/ramag_icon.png" />
+  <meta name="description" content="Diagnóstico y reparación de reductores, ensamble de bandas modulares, fabricación de equipos y más. Servicios industriales certificados por SEW-Eurodrive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary: '#0C3B52', 'primary-dark': '#082A3A',
+          'primary-light': '#175D8A', accent: '#00B9D8',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-poppins">
+
+  <!-- Top Bar -->
+  <div id="top-bar" class="hidden md:block">
+    <div class="topbar-inner">
+      <div class="flex items-center gap-5">
+        <a href="tel:+523312245803"><i class="fas fa-phone-alt mr-1"></i> +52 33 1224 5803</a>
+        <a href="mailto:contacto@ramag.mx"><i class="fas fa-envelope mr-1"></i> contacto@ramag.mx</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-clock mr-1"></i> Lun–Vie 9:00–18:00</span>
+        <a data-wa="Hola, quisiera solicitar una cotización." class="text-accent font-semibold">
+          <i class="fas fa-comments mr-1"></i> Solicitar cotización
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html"      class="nav-link">Inicio</a>
+        <a href="servicios.html"  class="nav-link">Servicios</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
+        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="clientes.html"   class="nav-link">Clientes</a>
+        <a href="nosotros.html"   class="nav-link">Nosotros</a>
+        <a href="contacto.html"   class="nav-link">Contacto</a>
+      </div>
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
+        <i class="fab fa-whatsapp mr-2"></i>Cotizar por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <span>Servicios</span>
+      </div>
+      <h1>Nuestros servicios</h1>
+      <p>Soluciones técnicas especializadas para cada necesidad de tu proceso industrial. Personal calificado, respaldo de fabricantes líderes y garantía total.</p>
+    </div>
+  </section>
+
+  <!-- Services nav chips -->
+  <div class="section--surface" style="padding:1.5rem">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
+      <span style="font-size:.75rem;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.1em;margin-right:.5rem">Ir a:</span>
+      <a href="#transmision"    class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-bolt mr-1"></i>Transmisión</a>
+      <a href="#reductores"     class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-tools mr-1"></i>Reductores</a>
+      <a href="#bandas"         class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-layer-group mr-1"></i>Bandas</a>
+      <a href="#ingenieria"     class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-drafting-compass mr-1"></i>Ingeniería</a>
+      <a href="#transportadores" class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-sync-alt mr-1"></i>Transportadores</a>
+      <a href="#fabricacion"    class="btn btn-dark" style="padding:.4rem 1rem;font-size:.78rem"><i class="fas fa-industry mr-1"></i>Fabricación</a>
+    </div>
+  </div>
+
+  <!-- Service 1: Transmisión de potencia -->
+  <section id="transmision">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-bolt svc-big-icon"></i>
+          <span class="svc-detail-tag">01 · SEW-Eurodrive</span>
+          <div class="svc-detail-title">Distribución e integración de transmisión de potencia</div>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio integral</span>
+          <h2 class="section-heading">Sistemas de transmisión de potencia</h2>
+          <p class="section-sub">
+            Soluciones completas para la selección, suministro e implementación de componentes de transmisión mecánica.
+            Somos distribuidores autorizados SEW-Eurodrive para la industria ligera y pesada.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Homologación de marca y selección adecuada a la aplicación</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Desarrollo de proyectos de ingeniería de transmisión</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Descuentos especiales para proyectos o sustitución de marca</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Soporte y asesoría técnica directa</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Certificados de autenticidad SEW-Eurodrive</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Motorreductores R, FA, K, S, Serie X, Planetario y MoviGear</div>
+          </div>
+          <span class="svc-brand-note"><i class="fas fa-certificate"></i> Distribuidor autorizado SEW-Eurodrive</span>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, me interesa información sobre sistemas de transmisión de potencia SEW-Eurodrive." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Consultar disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 2: Diagnóstico de reductores -->
+  <section id="reductores" class="section--surface">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-tools svc-big-icon"></i>
+          <span class="svc-detail-tag">02 · Certificado SEW</span>
+          <div class="svc-detail-title">Centro de diagnóstico y reparación de reductores</div>
+        </div>
+        <div>
+          <span class="eyebrow">Alto torque · Industria ligera</span>
+          <h2 class="section-heading">Diagnóstico y reparación de reductores</h2>
+          <p class="section-sub">
+            Evaluación técnica, mantenimiento correctivo y preventivo para reductores de velocidad.
+            Personal calificado con experiencia en reductores de alto torque e industria ligera.
+            Certificados y avalados por SEW-Eurodrive.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diagnóstico técnico especializado</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Servicio mecánico en planta o en campo</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Mantenimiento preventivo y correctivo</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Reparación general y cambio de componentes</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Pólizas de mantenimiento con visitas regulares</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Ahorros mayores al 50% vs equipo nuevo</div>
+          </div>
+          <span class="svc-brand-note"><i class="fas fa-award"></i> Certificados por SEW-Eurodrive</span>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, necesito servicio de diagnóstico y reparación de reductores." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Solicitar diagnóstico
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 3: Bandas modulares -->
+  <section id="bandas">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-layer-group svc-big-icon"></i>
+          <span class="svc-detail-tag">03 · Safari Belting</span>
+          <div class="svc-detail-title">Centro de ensamble de bandas modulares</div>
+        </div>
+        <div>
+          <span class="eyebrow">Alimentos · Bebidas · Cárnica</span>
+          <h2 class="section-heading">Bandas modulares<br>ULTRA-TUFF™</h2>
+          <p class="section-sub">
+            Configuración personalizada y armado de bandas modulares para aplicaciones específicas.
+            Material ULTRA-TUFF, exclusivo en el mercado para áreas críticas de alto impacto y/o temperatura.
+            Respaldados 100% por Chiorino Group Company.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Material ULTRA-TUFF para condiciones extremas</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Homologación de marcas: Intralox, Rexnord, Habasit, Uni</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Centro de ensamble con mano de obra calificada</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Mejora en tiempos de entrega</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Precios especiales por homologación y sustitución</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Desarrollo de proyectos de ingeniería</div>
+          </div>
+          <span class="svc-brand-note"><i class="fas fa-shield-alt"></i> Safari Belting · Chiorino Group</span>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, me interesa información sobre bandas modulares ULTRA-TUFF." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Consultar bandas
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 4: Ingeniería -->
+  <section id="ingenieria" class="section--surface">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-drafting-compass svc-big-icon"></i>
+          <span class="svc-detail-tag">04 · Proyectos a la medida</span>
+          <div class="svc-detail-title">Diseño y desarrollo de ingeniería</div>
+        </div>
+        <div>
+          <span class="eyebrow">Ingeniería industrial</span>
+          <h2 class="section-heading">Diseño y desarrollo<br>de ingeniería</h2>
+          <p class="section-sub">
+            Proyectos a la medida que integran innovación, eficiencia operativa y cumplimiento de normativas.
+            Diseñamos soluciones completas desde el concepto hasta la implementación.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diseño de acoplamiento de reductores a equipos específicos</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diseño y fabricación de intercambiadores de calor</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diseño de tanques de almacenamiento</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Ingeniería de transportadores y sistemas de manejo de materiales</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diseño de canastillas y accesorios especializados</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Documentación en CAD 3D, despiece, manuales e instructivos</div>
+          </div>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, me interesa un proyecto de ingeniería a la medida." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Solicitar proyecto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 5: Transportadores -->
+  <section id="transportadores">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-sync-alt svc-big-icon"></i>
+          <span class="svc-detail-tag">05 · Renovación</span>
+          <div class="svc-detail-title">Renovación y modificación de transportadores</div>
+        </div>
+        <div>
+          <span class="eyebrow">Sistemas de transportación</span>
+          <h2 class="section-heading">Renovación y modernización<br>de transportadores</h2>
+          <p class="section-sub">
+            Actualización tecnológica, adaptación a nuevos procesos y mejora de rendimiento en sistemas existentes.
+            Extendemos la vida útil de tus equipos y optimizamos su desempeño.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Diagnóstico del estado actual del sistema</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Actualización de componentes de transmisión</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Adaptación a nuevos requerimientos de proceso</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Instalación de sistemas de accionamiento modernos</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Estructuras y soportería especializada</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Transporte aéreo y sistemas especiales</div>
+          </div>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, necesito información sobre renovación de transportadores." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Consultar renovación
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 6: Fabricación -->
+  <section id="fabricacion" class="section--surface">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="svc-detail animate-up">
+        <div class="svc-detail-visual">
+          <i class="fas fa-industry svc-big-icon"></i>
+          <span class="svc-detail-tag">06 · Fabricación</span>
+          <div class="svc-detail-title">Fabricación de equipos industriales</div>
+        </div>
+        <div>
+          <span class="eyebrow">Fabricación especializada</span>
+          <h2 class="section-heading">Fabricación de equipos<br>a tu medida</h2>
+          <p class="section-sub">
+            Fabricación de transportadores y componentes especializados, alineados a los requerimientos del cliente.
+            Desde el diseño conceptual hasta la instalación y puesta en marcha.
+          </p>
+          <div class="svc-feature-list">
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Transportadores de banda, modular y de cadena</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Transportadores aéreos (grúas de cadena para izado)</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Tubería sanitaria grado alimenticio</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Plataformas elevadas y estructuras de acceso</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Equipos electromecánicos especializados</div>
+            <div class="svc-feature"><i class="fas fa-check-circle"></i> Componentes en acero inoxidable y al carbón</div>
+          </div>
+          <div style="margin-top:1.5rem">
+            <a data-wa="Hola RAMAG, me interesa fabricación de equipo industrial especializado." class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> Solicitar fabricación
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post-sale service -->
+  <section class="section section--primary">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Servicio post venta</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto;">
+          Nuestro compromiso no termina con la venta
+        </h2>
+      </div>
+      <div class="services-grid animate-up delay-1" style="margin-top:2.5rem">
+        <div class="service-card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15)">
+          <div class="svc-icon" style="background:rgba(255,255,255,.1);color:var(--accent)"><i class="fas fa-headset"></i></div>
+          <div class="svc-title" style="color:white">Asesoría técnica</div>
+          <p class="svc-desc" style="color:rgba(255,255,255,.65)">Asistencia en instalación, configuración y puesta en marcha de equipos y componentes.</p>
+        </div>
+        <div class="service-card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15)">
+          <div class="svc-icon" style="background:rgba(255,255,255,.1);color:var(--accent)"><i class="fas fa-graduation-cap"></i></div>
+          <div class="svc-title" style="color:white">Capacitación</div>
+          <p class="svc-desc" style="color:rgba(255,255,255,.65)">Capacitación efectiva para la selección, instalación y uso correcto de los productos.</p>
+        </div>
+        <div class="service-card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15)">
+          <div class="svc-icon" style="background:rgba(255,255,255,.1);color:var(--accent)"><i class="fas fa-file-alt"></i></div>
+          <div class="svc-title" style="color:white">Documentación técnica</div>
+          <p class="svc-desc" style="color:rgba(255,255,255,.65)">CAD 3D, despieces, manuales e instructivos disponibles a solicitud del cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2>¿Necesitas un servicio especializado?</h2>
+      <p>Cuéntanos tu necesidad. Nuestro equipo técnico diseñará la solución más adecuada para tu operación.</p>
+      <div class="cta-band-btns">
+        <a data-wa="Hola RAMAG, necesito información sobre sus servicios industriales." class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Contactar ahora
+        </a>
+        <a href="contacto.html" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Formulario de contacto
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <p class="footer-desc">Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
+          <a href="servicios.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Servicios</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Productos</a>
+          <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
+          <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Calle El Laurel 500-A5, La Alameda, Jal.</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+523312245803">+52 33 1224 5803</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Vie · 9:00 – 18:00 h</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RAMAG Integración e Ingeniería. Todos los derechos reservados.</span>
+      <a href="https://ramag.mx">ramag.mx</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Hola RAMAG, vi su sitio web y me gustaría obtener información." aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

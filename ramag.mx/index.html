@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAMAG — Integración e Ingeniería | Transmisión de Potencia</title>
+  <link rel="icon" type="image/png" href="img/ramag_icon.png" />
+  <meta name="description" content="Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia, fabricación de equipo y servicio industrial. Distribuidor oficial SEW-Eurodrive en Jalisco." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary: '#0C3B52', 'primary-dark': '#082A3A',
+          'primary-light': '#175D8A', accent: '#00B9D8',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-poppins">
+
+  <!-- Top Bar -->
+  <div id="top-bar" class="hidden md:block">
+    <div class="topbar-inner">
+      <div class="flex items-center gap-5">
+        <a href="tel:+523312245803"><i class="fas fa-phone-alt mr-1"></i> +52 33 1224 5803</a>
+        <a href="mailto:contacto@ramag.mx"><i class="fas fa-envelope mr-1"></i> contacto@ramag.mx</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-clock mr-1"></i> Lun–Vie 9:00–18:00</span>
+        <a data-wa="Hola, quisiera solicitar una cotización." class="text-accent font-semibold">
+          <i class="fas fa-comments mr-1"></i> Solicitar cotización
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html"      class="nav-link">Inicio</a>
+        <a href="servicios.html"  class="nav-link">Servicios</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
+        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="clientes.html"   class="nav-link">Clientes</a>
+        <a href="nosotros.html"   class="nav-link">Nosotros</a>
+        <a href="contacto.html"   class="nav-link">Contacto</a>
+      </div>
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
+        <i class="fab fa-whatsapp mr-2"></i>Cotizar por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow eyebrow-shimmer animate-up">12+ años maximizando la potencia y optimizando los procesos</span>
+        <h1 class="animate-up delay-1">
+          <span style="display:block;font-size:clamp(3.8rem,8vw,6.5rem);color:white;letter-spacing:-.03em;line-height:1;font-weight:900">RAMAG</span>
+          <span style="display:block;font-size:clamp(1rem,2.2vw,1.35rem);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-top:.5rem">Integración e Ingeniería</span>
+        </h1>
+        <p class="animate-up delay-2">
+          Soluciones en transmisión de potencia para la industria.
+          MRO (Mantenimiento, Reparación y Operación) más allá del refaccionamiento —
+          somos parte de la cadena productiva de tu empresa.
+        </p>
+        <div class="hero-btns animate-up delay-3">
+          <a data-wa="Hola RAMAG, me gustaría solicitar una cotización." class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i> Cotizar ahora
+          </a>
+          <a href="servicios.html" class="btn btn-outline">
+            <i class="fas fa-cogs"></i> Ver servicios
+          </a>
+        </div>
+        <div class="hero-badges animate-up delay-4">
+          <span class="hero-badge"><i class="fas fa-certificate"></i> Distribuidor SEW-Eurodrive</span>
+          <span class="hero-badge"><i class="fas fa-shield-alt"></i> 100% Garantizado</span>
+          <span class="hero-badge"><i class="fas fa-industry"></i> 9 Industrias</span>
+        </div>
+      </div>
+      <div class="hero-visual animate-right delay-2">
+        <div class="hero-visual-box" id="atom-scene">
+          <!-- Anillos orbitales 3D -->
+          <div class="atom-ring r1"></div>
+          <div class="atom-ring r2"></div>
+          <div class="atom-ring r3"></div>
+          <div class="atom-ring r4"></div>
+          <!-- Halo del núcleo -->
+          <div class="atom-glow"></div>
+          <!-- Núcleo -->
+          <div class="atom-nucleus">
+            <div id="atom-gear"><i class="fas fa-cog"></i></div>
+          </div>
+          <!-- Electrones / palabras orbitando -->
+          <div class="atom-el" id="ae0"><span class="ae-dot"></span><span class="ae-word">INGENIERÍA</span></div>
+          <div class="atom-el" id="ae1"><span class="ae-dot"></span><span class="ae-word">RETROFIT</span></div>
+          <div class="atom-el" id="ae2"><span class="ae-dot"></span><span class="ae-word">INTEGRACIÓN</span></div>
+          <div class="atom-el" id="ae3"><span class="ae-dot"></span><span class="ae-word">REPARACIÓN</span></div>
+          <div class="atom-el" id="ae4"><span class="ae-dot"></span><span class="ae-word">SERVICIO TÉCNICO</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item animate-up">
+        <span class="stat-number" data-target="12" data-suffix="+">12+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-item animate-up delay-1">
+        <span class="stat-number" data-target="9" data-suffix="">9</span>
+        <span class="stat-label">Industrias atendidas</span>
+      </div>
+      <div class="stat-item animate-up delay-2">
+        <span class="stat-number" data-target="8" data-suffix="+">8+</span>
+        <span class="stat-label">Marcas representadas</span>
+      </div>
+      <div class="stat-item animate-up delay-3">
+        <span class="stat-number" data-target="100" data-suffix="%">100%</span>
+        <span class="stat-label">Garantía en productos</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro: What we do -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="intro-grid">
+        <div class="animate-left">
+          <span class="eyebrow">¿Qué hacemos?</span>
+          <h2 class="section-heading">No vendemos productos,<br>ofrecemos <em style="font-style:normal;color:var(--accent)">soluciones</em></h2>
+          <p class="section-sub">
+            RAMAG cubre las necesidades MRO (Mantenimiento, Reparación y Operación) de tu planta más allá del refaccionamiento.
+            Tenemos la experiencia técnica y las alianzas estratégicas para integrar
+            soluciones completas en tu proceso productivo.
+          </p>
+          <div class="intro-list">
+            <div class="intro-item">
+              <div class="intro-icon"><i class="fas fa-search"></i></div>
+              <div>
+                <div class="intro-item-title">Inspección y diagnóstico</div>
+                <div class="intro-item-text">Revisión técnica de partes instaladas e identificación de oportunidades de mejora.</div>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-icon"><i class="fas fa-wrench"></i></div>
+              <div>
+                <div class="intro-item-title">Servicio preventivo y correctivo</div>
+                <div class="intro-item-text">Mantenimiento y reparación de reductores, transportadores y equipos industriales.</div>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <div>
+                <div class="intro-item-title">Integración de componentes</div>
+                <div class="intro-item-text">Selección, suministro e implementación de sistemas de transmisión mecánica completos.</div>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-icon"><i class="fas fa-drafting-compass"></i></div>
+              <div>
+                <div class="intro-item-title">Diseño y fabricación</div>
+                <div class="intro-item-text">Ingeniería a la medida: transportadores, tanques, estructuras y equipos especializados.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-right">
+          <div class="intro-visual-badge">
+            <div class="ivb-mro">MRO</div>
+            <div class="ivb-label">Mantenimiento · Reparación · Operación</div>
+            <p class="ivb-desc">
+              Somos el socio estratégico que tu planta necesita.
+              Ofrecemos pólizas de mantenimiento, stock de partes críticas,
+              visitas regulares y diagnósticos definidos para garantizar
+              la continuidad de tu operación.
+            </p>
+            <div class="ivb-tags">
+              <span class="ivb-tag">Justo a tiempo</span>
+              <span class="ivb-tag">Sin compromiso de compra</span>
+              <span class="ivb-tag">Órdenes urgentes</span>
+              <span class="ivb-tag">Ahorros >50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       MRO Deep Dive — El estándar industrial moderno
+       ════════════════════════════════════════════════════════ -->
+  <section class="section mro-deep" id="mro">
+    <div class="section-inner">
+
+      <!-- Header -->
+      <div class="text-center animate-up" style="margin-bottom:1rem">
+        <span class="eyebrow" style="color:var(--accent)">El estándar industrial moderno</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto">
+          ¿Qué es <span style="color:var(--accent)">MRO</span> y por qué es crítico para tu planta?
+        </h2>
+        <p class="section-sub section-sub--white" style="max-width:64ch;margin-inline:auto;text-align:center">
+          MRO (Mantenimiento, Reparación y Operación) es la disciplina industrial que mantiene
+          tu planta corriendo. No es un gasto: es lo que
+          <strong style="color:var(--accent)">protege tu inversión</strong> y garantiza la continuidad operativa.
+        </p>
+      </div>
+
+      <!-- ── Las 3 letras ── -->
+      <div class="mro-letters">
+
+        <div class="mro-letter animate-up delay-1">
+          <div class="ml-head">
+            <div class="ml-big">M</div>
+            <div class="ml-word">antenimiento</div>
+          </div>
+          <p class="ml-desc">
+            Tareas <strong>programadas y predictivas</strong> que prolongan la vida útil de tus activos
+            antes de que fallen. La diferencia entre <em>uptime</em> y paro no programado.
+          </p>
+          <ul class="ml-list">
+            <li><i class="fas fa-check"></i> Inspección técnica regular</li>
+            <li><i class="fas fa-check"></i> Lubricación y ajustes en sitio</li>
+            <li><i class="fas fa-check"></i> Análisis de vibración y termografía</li>
+          </ul>
+        </div>
+
+        <div class="mro-letter animate-up delay-2">
+          <div class="ml-head">
+            <div class="ml-big">R</div>
+            <div class="ml-word">eparación</div>
+          </div>
+          <p class="ml-desc">
+            Restauración de equipos averiados con <strong>tiempos de respuesta cortos</strong>.
+            Diagnóstico, reemplazo o reconstrucción de componentes críticos.
+          </p>
+          <ul class="ml-list">
+            <li><i class="fas fa-check"></i> Reductores, motores y bandas</li>
+            <li><i class="fas fa-check"></i> Reconstrucción en taller RAMAG</li>
+            <li><i class="fas fa-check"></i> Garantía por escrito</li>
+          </ul>
+        </div>
+
+        <div class="mro-letter animate-up delay-3">
+          <div class="ml-head">
+            <div class="ml-big">O</div>
+            <div class="ml-word">peración</div>
+          </div>
+          <p class="ml-desc">
+            Suministro <strong>continuo de partes y consumibles</strong> que mantienen el día a día de tu planta.
+            Stock, urgencias y disponibilidad cuando lo necesitas.
+          </p>
+          <ul class="ml-list">
+            <li><i class="fas fa-check"></i> Refacciones SEW / Safari / Martin</li>
+            <li><i class="fas fa-check"></i> Cadenas, bandas y consumibles</li>
+            <li><i class="fas fa-check"></i> Stock estratégico en Jalisco</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ── Estrategias del MRO moderno ── -->
+      <div class="mro-strategies animate-up">
+        <div class="ms-header">
+          <span class="ms-divider"></span>
+          <span class="ms-title">3 estrategias del MRO moderno</span>
+          <span class="ms-divider"></span>
+        </div>
+        <div class="ms-grid">
+          <div class="ms-card">
+            <div class="ms-icon"><i class="fas fa-calendar-check"></i></div>
+            <h4>Preventivo</h4>
+            <p>Mantenimiento programado con base en tiempo o uso. Evita fallas antes de que ocurran.</p>
+          </div>
+          <div class="ms-card">
+            <div class="ms-icon"><i class="fas fa-tools"></i></div>
+            <h4>Correctivo</h4>
+            <p>Reacción inmediata ante una falla existente. Restauración rápida del equipo afectado.</p>
+          </div>
+          <div class="ms-card ms-card--featured">
+            <div class="ms-badge">Avanzado</div>
+            <div class="ms-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Predictivo</h4>
+            <p>Sensores y diagnóstico técnico anticipan la falla. Se interviene solo cuando es necesario.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 4 áreas que abarca MRO ── -->
+      <div class="mro-areas animate-up">
+        <div class="ms-header">
+          <span class="ms-divider"></span>
+          <span class="ms-title">4 áreas que abarca el MRO industrial</span>
+          <span class="ms-divider"></span>
+        </div>
+        <div class="ma-grid">
+          <div class="ma-item">
+            <i class="fas fa-industry"></i>
+            <div>
+              <strong>Equipo de producción</strong>
+              <span>Maquinaria que produce el producto final</span>
+            </div>
+          </div>
+          <div class="ma-item">
+            <i class="fas fa-truck-loading"></i>
+            <div>
+              <strong>Manejo de materiales</strong>
+              <span>Transportadores, bandas, sistemas de movimiento</span>
+            </div>
+          </div>
+          <div class="ma-item">
+            <i class="fas fa-warehouse"></i>
+            <div>
+              <strong>Infraestructura</strong>
+              <span>Instalaciones, servicios y soporte de planta</span>
+            </div>
+          </div>
+          <div class="ma-item">
+            <i class="fas fa-screwdriver-wrench"></i>
+            <div>
+              <strong>Herramientas y consumibles</strong>
+              <span>Refacciones, lubricantes, bandas, cadenas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Cierre: rol RAMAG ── -->
+      <div class="mro-impact animate-up">
+        <div class="mi-content">
+          <div class="mi-icon"><i class="fas fa-handshake"></i></div>
+          <div>
+            <span class="eyebrow" style="color:var(--accent)">El rol RAMAG</span>
+            <h3>Cubrimos el ciclo MRO completo</h3>
+            <p>Desde el diagnóstico inicial hasta el suministro continuo y la reparación urgente,
+               RAMAG actúa como tu <strong>extensión técnica</strong> — no solo como proveedor.
+               Una sola conversación resuelve mantenimiento, reparación y operación.</p>
+          </div>
+        </div>
+        <div class="mi-stats">
+          <div><strong>9</strong><span>Industrias</span></div>
+          <div><strong>8+</strong><span>Marcas</span></div>
+          <div><strong>&lt;1h</strong><span>Diagnóstico</span></div>
+          <div><strong>100%</strong><span>Garantía</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section section--surface">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Nuestros servicios</span>
+        <h2 class="section-heading section-heading--center" style="margin:0 auto;">Soluciones completas para la industria</h2>
+        <p class="section-sub" style="margin-inline:auto;text-align:center;">
+          Desde la distribución de componentes hasta la fabricación de equipos completos,
+          cubrimos cada etapa de tu necesidad industrial.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-up delay-1" data-num="01">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-bolt"></i></div>
+          <div class="svc-title">Transmisión de potencia</div>
+          <p class="svc-desc">Distribución e integración de motorreductores, reductores industriales y sistemas mecatrónicos SEW-Eurodrive.</p>
+          <a href="servicios.html#transmision" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-up delay-2" data-num="02">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-tools"></i></div>
+          <div class="svc-title">Diagnóstico de reductores</div>
+          <p class="svc-desc">Centro especializado en evaluación técnica, mantenimiento preventivo y correctivo. Certificados por SEW-Eurodrive.</p>
+          <a href="servicios.html#reductores" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-up delay-3" data-num="03">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="svc-title">Bandas modulares</div>
+          <p class="svc-desc">Centro de ensamble con material ULTRA-TUFF. Homologación de marcas como Intralox, Rexnord y Habasit.</p>
+          <a href="servicios.html#bandas" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-up delay-1" data-num="04">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-drafting-compass"></i></div>
+          <div class="svc-title">Ingeniería a la medida</div>
+          <p class="svc-desc">Proyectos integrales que combinan innovación, eficiencia operativa y cumplimiento de normativas industriales.</p>
+          <a href="servicios.html#ingenieria" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-up delay-2" data-num="05">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-sync-alt"></i></div>
+          <div class="svc-title">Renovación de transportadores</div>
+          <p class="svc-desc">Actualización tecnológica, adaptación a nuevos procesos y mejora de rendimiento en sistemas de transportación existentes.</p>
+          <a href="servicios.html#transportadores" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-up delay-3" data-num="06">
+          <span class="svc-num">Servicio</span>
+          <div class="svc-icon"><i class="fas fa-industry"></i></div>
+          <div class="svc-title">Fabricación de equipos</div>
+          <p class="svc-desc">Fabricación de transportadores y componentes especializados alineados a los requerimientos específicos del cliente.</p>
+          <a href="servicios.html#fabricacion" class="svc-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-10 animate-up">
+        <a href="servicios.html" class="btn btn-dark">
+          <i class="fas fa-cogs"></i> Ver todos los servicios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="section brands-section">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Nuestros representados</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto;">
+          Marcas de confianza que respaldamos
+        </h2>
+        <p class="section-sub section-sub--white" style="margin-inline:auto;text-align:center;">
+          Selección confiable de componentes gracias al respaldo de fabricantes líderes a nivel mundial.
+        </p>
+      </div>
+      <div class="brands-grid animate-up delay-1">
+        <span class="brand-badge"><i class="fas fa-star mr-1" style="color:var(--accent);font-size:.7rem"></i> SEW-Eurodrive</span>
+        <span class="brand-badge">SEID Cadenas</span>
+        <span class="brand-badge">Safari Belting · ULTRA-TUFF</span>
+        <span class="brand-badge">PII</span>
+        <span class="brand-badge">Webster Industries</span>
+        <span class="brand-badge">Martin Sprocket &amp; Gear</span>
+        <span class="brand-badge">BeltService Corporation</span>
+        <span class="brand-badge">Regal Rexnord</span>
+      </div>
+      <div class="text-center mt-8 animate-up delay-2">
+        <a href="productos.html" class="btn btn-ghost">
+          <i class="fas fa-boxes"></i> Ver catálogo de productos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="animate-up">
+        <span class="eyebrow">Sectores</span>
+        <h2 class="section-heading">Amplia experiencia<br>en la industria</h2>
+        <p class="section-sub">Más de 12 años atendiendo los sectores más exigentes de la industria nacional.</p>
+      </div>
+      <div class="industries-grid">
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#14b8a6,#0d9488)"><i class="fas fa-flask"></i></div>
+              <div class="industry-name">Química</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#14b8a6,#0d9488)">
+              <i class="fas fa-flask ind-back-icon"></i>
+              <div class="ind-back-title">Química</div>
+              <p class="ind-back-text">Reactores y agitadores. Reductores SEW de servicio severo + sellos anticorrosión.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#f59e0b,#b45309)"><i class="fas fa-wine-bottle"></i></div>
+              <div class="industry-name">Tequilera</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#f59e0b,#b45309)">
+              <i class="fas fa-wine-bottle ind-back-icon"></i>
+              <div class="ind-back-title">Tequilera</div>
+              <p class="ind-back-text">Embotellado, hornos y molinos. Motorreductores SEW + transportadores a medida.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#78716c,#44403c)"><i class="fas fa-hard-hat"></i></div>
+              <div class="industry-name">Cementera</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#78716c,#44403c)">
+              <i class="fas fa-hard-hat ind-back-icon"></i>
+              <div class="ind-back-title">Cementera</div>
+              <p class="ind-back-text">Molienda y transporte abrasivo. Bandas Safari + reductores de alta capacidad.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#0ea5e9,#0369a1)"><i class="fas fa-glass-whiskey"></i></div>
+              <div class="industry-name">Bebidas</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#0ea5e9,#0369a1)">
+              <i class="fas fa-glass-whiskey ind-back-icon"></i>
+              <div class="ind-back-title">Bebidas</div>
+              <p class="ind-back-text">Embotelladoras y packaging. Bandas modulares grado sanitario.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#eab308,#a16207)"><i class="fas fa-cubes"></i></div>
+              <div class="industry-name">Azucarera</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#eab308,#a16207)">
+              <i class="fas fa-cubes ind-back-icon"></i>
+              <div class="ind-back-title">Azucarera</div>
+              <p class="ind-back-text">Molinos cañeros y centrifugas. Reductores de alta torsión + cadenas robustas.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#84cc16,#4d7c0f)"><i class="fas fa-seedling"></i></div>
+              <div class="industry-name">Forrajera</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#84cc16,#4d7c0f)">
+              <i class="fas fa-seedling ind-back-icon"></i>
+              <div class="ind-back-title">Forrajera</div>
+              <p class="ind-back-text">Mezcladoras y peletizadoras. Transmisión confiable y de bajo costo operativo.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#65a30d,#365314)"><i class="fas fa-tractor"></i></div>
+              <div class="industry-name">Agroindustria</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#65a30d,#365314)">
+              <i class="fas fa-tractor ind-back-icon"></i>
+              <div class="ind-back-title">Agroindustria</div>
+              <p class="ind-back-text">Campo y empaque. Soluciones MRO adaptadas a la estacionalidad de cosecha.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#f43f5e,#be123c)"><i class="fas fa-apple-alt"></i></div>
+              <div class="industry-name">Alimenticia</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#f43f5e,#be123c)">
+              <i class="fas fa-apple-alt ind-back-icon"></i>
+              <div class="ind-back-title">Alimenticia</div>
+              <p class="ind-back-text">Proceso y empaque. Bandas ULTRA-TUFF + cadenas SS304 con cumplimiento FDA.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#64748b,#1e293b)"><i class="fas fa-mountain"></i></div>
+              <div class="industry-name">Minera</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#64748b,#1e293b)">
+              <i class="fas fa-mountain ind-back-icon"></i>
+              <div class="ind-back-title">Minera</div>
+              <p class="ind-back-text">Bandas pesadas y molinos. Retrofit y equipos de alta capacidad.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-1" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#e11d48,#881337)"><i class="fas fa-drumstick-bite"></i></div>
+              <div class="industry-name">Cárnica</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#e11d48,#881337)">
+              <i class="fas fa-drumstick-bite ind-back-icon"></i>
+              <div class="ind-back-title">Cárnica</div>
+              <p class="ind-back-text">Procesamiento sanitario. Equipos IP69, cadenas y materiales aptos para alimentos.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#10b981,#047857)"><i class="fas fa-recycle"></i></div>
+              <div class="industry-name">Reciclados</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#10b981,#047857)">
+              <i class="fas fa-recycle ind-back-icon"></i>
+              <div class="ind-back-title">Reciclados</div>
+              <p class="ind-back-text">Bandas para residuos y trituradores. Equipos antiabrasivos de alta resistencia.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industry-card animate-up delay-2" tabindex="0">
+          <div class="ind-flip">
+            <div class="ind-face ind-face-front">
+              <div class="industry-icon-bg" style="background:linear-gradient(135deg,#6366f1,#3730a3)"><i class="fas fa-car"></i></div>
+              <div class="industry-name">Automotriz</div>
+            </div>
+            <div class="ind-face ind-face-back" style="background:linear-gradient(135deg,#6366f1,#3730a3)">
+              <i class="fas fa-car ind-back-icon"></i>
+              <div class="ind-back-title">Automotriz</div>
+              <p class="ind-back-text">Líneas de ensamble. SEW MoviGear + variadores y eficiencia IE4.</p>
+              <div class="ind-back-tag"><i class="fas fa-cog"></i> RAMAG</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why RAMAG -->
+  <section class="section section--primary">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Propuesta de valor</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto;">
+          ¿Por qué elegir RAMAG?
+        </h2>
+        <p class="section-sub section-sub--white" style="margin-inline:auto;text-align:center;">
+          Nuestra propuesta va más allá del producto. Nos comprometemos con la continuidad operativa de tu planta.
+        </p>
+      </div>
+      <div class="why-grid animate-up delay-1">
+
+        <!-- 01 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">01</span>
+              <div>
+                <div class="why-title">Optimización de costos</div>
+                <div class="why-desc">Proyectos de integración diseñados para maximizar el rendimiento de tu inversión y reducir costos operativos.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="why-back-label">ROI medible</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> Hasta <strong>35% menos</strong> en costos operativos</li>
+                <li><i class="fas fa-check"></i> Equipos de alta eficiencia <strong>IE3 / IE4</strong></li>
+                <li><i class="fas fa-check"></i> Análisis técnico-económico antes de cotizar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">02</span>
+              <div>
+                <div class="why-title">Refaccionamiento Justo a Tiempo</div>
+                <div class="why-desc">Programas sin compromiso de compra. Tenemos el stock disponible cuando tú lo necesitas.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-warehouse"></i></div>
+                <div class="why-back-label">Disponibilidad real</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> Stock estratégico en <strong>Jalisco</strong></li>
+                <li><i class="fas fa-check"></i> Sin mínimos de compra ni contratos forzados</li>
+                <li><i class="fas fa-check"></i> Programas de <strong>consignación</strong> disponibles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">03</span>
+              <div>
+                <div class="why-title">Respuesta ágil a urgencias</div>
+                <div class="why-desc">Expeditación de órdenes urgentes con tiempos de respuesta rápidos para minimizar paros de línea.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-bolt"></i></div>
+                <div class="why-back-label">Cuando cada hora cuenta</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> Diagnóstico remoto en <strong>&lt; 1 hora</strong></li>
+                <li><i class="fas fa-check"></i> Soporte directo por <strong>WhatsApp</strong></li>
+                <li><i class="fas fa-check"></i> Movilización de técnico en sitio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">04</span>
+              <div>
+                <div class="why-title">Garantía total</div>
+                <div class="why-desc">Respaldamos la calidad y confiabilidad de todos nuestros productos y servicios con garantía completa.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="why-back-label">Tu inversión protegida</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> Garantía <strong>por escrito</strong></li>
+                <li><i class="fas fa-check"></i> Reposición o reparación <strong>sin costo</strong></li>
+                <li><i class="fas fa-check"></i> Soporte post-venta sin caducidad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">05</span>
+              <div>
+                <div class="why-title">Experiencia comprobada</div>
+                <div class="why-desc">Más de 12 años de resultados tangibles en los sectores más exigentes de la industria nacional.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-award"></i></div>
+                <div class="why-back-label">12+ años de resultados</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> <strong>9 industrias</strong> atendidas activamente</li>
+                <li><i class="fas fa-check"></i> <strong>8+ marcas</strong> líderes representadas</li>
+                <li><i class="fas fa-check"></i> Casos de éxito documentados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="why-item" tabindex="0">
+          <div class="why-flip">
+            <div class="why-face why-face-front">
+              <span class="why-num">06</span>
+              <div>
+                <div class="why-title">Certificaciones disponibles</div>
+                <div class="why-desc">Certificados y avalados por SEW-Eurodrive. Documentación disponible según los requerimientos de tu empresa.</div>
+              </div>
+              <i class="why-flip-hint fas fa-sync-alt"></i>
+            </div>
+            <div class="why-face why-face-back">
+              <div class="why-back-head">
+                <div class="why-back-icon"><i class="fas fa-certificate"></i></div>
+                <div class="why-back-label">Documentación completa</div>
+              </div>
+              <ul class="why-back-list">
+                <li><i class="fas fa-check"></i> Distribuidor oficial <strong>SEW-Eurodrive</strong></li>
+                <li><i class="fas fa-check"></i> Certificados de autenticidad por equipo</li>
+                <li><i class="fas fa-check"></i> Cumplimiento normativo (FDA / NOM)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ────────────────────────────────────────────────
+           Comparativa: Lo que otros hacen vs lo que hace RAMAG
+           ──────────────────────────────────────────────── -->
+      <div class="vs-block animate-up delay-2">
+        <div class="vs-header">
+          <span class="eyebrow" style="color:var(--accent)">La diferencia RAMAG</span>
+          <h3 class="vs-title">Lo que otros hacen <span style="color:var(--accent)">vs</span> lo que hacemos</h3>
+          <p class="vs-sub">No somos un proveedor más de catálogo. Somos un socio técnico que se involucra de principio a fin.</p>
+        </div>
+        <div class="vs-grid">
+
+          <!-- Otros -->
+          <div class="vs-col vs-col--others">
+            <div class="vs-col-head">
+              <i class="fas fa-store"></i>
+              <span>Otros proveedores</span>
+            </div>
+            <ul>
+              <li><i class="fas fa-times"></i> <span>Suministro</span></li>
+              <li><i class="fas fa-times"></i> <span>Refaccionamiento por catálogo</span></li>
+              <li><i class="fas fa-times"></i> <span>Refaccionamiento de lo existente</span></li>
+              <li><i class="fas fa-times"></i> <span>Entrega en almacén</span></li>
+              <li><i class="fas fa-times"></i> <span>Vendedor sin formación técnica</span></li>
+              <li><i class="fas fa-times"></i> <span>Cotización por lista de precios</span></li>
+            </ul>
+          </div>
+
+          <!-- RAMAG -->
+          <div class="vs-col vs-col--ramag">
+            <div class="vs-badge"><i class="fas fa-star"></i> RAMAG</div>
+            <div class="vs-col-head">
+              <span class="vs-gear-badge">
+                <i class="fas fa-cog vs-gear vs-gear--big"></i>
+                <i class="fas fa-cog vs-gear vs-gear--small"></i>
+              </span>
+              <span>El estándar RAMAG</span>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> <strong>Integración</strong> completa de sistemas</li>
+              <li><i class="fas fa-check"></i> <strong>Ingeniería</strong> de diseño y selección técnica</li>
+              <li><i class="fas fa-check"></i> <strong>Retrofit</strong> · Actualización de componentes</li>
+              <li><i class="fas fa-check"></i> <strong>Entrega + Servicio + Diagnóstico + Puesta en marcha</strong></li>
+              <li><i class="fas fa-check"></i> Asesores con <strong>formación de ingeniería</strong></li>
+              <li><i class="fas fa-check"></i> <strong>Análisis técnico-económico</strong> antes de cotizar</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2>¿Listo para optimizar tu operación?</h2>
+      <p>Contáctanos hoy. Nuestro equipo técnico analizará tu necesidad y te presentará la mejor solución.</p>
+      <div class="cta-band-btns">
+        <a data-wa="Hola RAMAG, me gustaría solicitar una cotización técnica." class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> WhatsApp directo
+        </a>
+        <a href="contacto.html" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Formulario de contacto
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <p class="footer-desc">
+          Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.
+          Somos parte de la cadena productiva de tu empresa.
+        </p>
+        <div style="margin-top:1.25rem;display:flex;gap:.75rem;">
+          <a href="https://www.facebook.com" target="_blank" style="color:rgba(255,255,255,.4);font-size:1.1rem;transition:color.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='rgba(255,255,255,.4)'"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" style="color:rgba(255,255,255,.4);font-size:1.1rem;transition:color.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='rgba(255,255,255,.4)'"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/523312245803" target="_blank" style="color:rgba(255,255,255,.4);font-size:1.1rem;transition:color.2s" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='rgba(255,255,255,.4)'"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
+          <a href="servicios.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Servicios</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Productos</a>
+          <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
+          <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Calle El Laurel 500-A5<br>La Alameda, 45679, Jal.</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+523312245803">+52 33 1224 5803</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <span>Lun–Vie · 9:00 – 18:00 h</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RAMAG Integración e Ingeniería. Todos los derechos reservados.</span>
+      <a href="https://ramag.mx">ramag.mx</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a class="wa-float" data-wa="Hola RAMAG, vi su sitio web y me gustaría obtener información." aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  /* ── Tap-to-flip en dispositivos táctiles (why-cards + industry-cards) ── */
+  (function () {
+    if (!window.matchMedia('(hover: none)').matches) return;
+    document.querySelectorAll('.why-item, .industry-card').forEach(function (card) {
+      card.addEventListener('click', function () { card.classList.toggle('flipped'); });
+    });
+  })();
+  </script>
+  <script>
+  /* ── Atom Hero Animation ── */
+  (function () {
+    var scene = document.getElementById('atom-scene');
+    if (!scene) return;
+
+    /* Cada órbita: a y b son fracciones del radio del box (R = ancho/2)
+       angle = rotación del eje mayor (rad)
+       speed = rad/ms  (más bajo = más lento)
+       phase = ángulo inicial */
+    var orbits = [
+      { a: 0.74, b: 0.16, angle: 0.10, speed: 5.5e-4, phase: 0.00 }, /* INGENIERÍA       */
+      { a: 0.62, b: 0.27, angle: 0.95, speed: 4.5e-4, phase: 1.30 }, /* RETROFIT         */
+      { a: 0.76, b: 0.19, angle: 1.85, speed: 3.6e-4, phase: 2.60 }, /* INTEGRACIÓN      */
+      { a: 0.64, b: 0.30, angle: 2.75, speed: 2.9e-4, phase: 3.90 }, /* REPARACIÓN       */
+      { a: 0.71, b: 0.17, angle: 3.65, speed: 2.3e-4, phase: 5.20 }, /* SERVICIO TÉCNICO */
+    ];
+
+    var els  = [0, 1, 2, 3, 4].map(function (i) { return document.getElementById('ae' + i); });
+    var gear = document.getElementById('atom-gear');
+    var gA = 0, last = null;
+
+    function tick(ts) {
+      if (!last) last = ts;
+      var dt = Math.min(ts - last, 50); /* cap para evitar saltos al cambiar pestaña */
+      last = ts;
+
+      var R = scene.offsetWidth / 2; /* radio = mitad del box */
+
+      /* Girar engranaje */
+      gA += dt * 0.044;
+      if (gear) gear.style.transform = 'rotate(' + gA + 'deg)';
+
+      /* Posicionar cada electrón sobre su elipse */
+      orbits.forEach(function (o, i) {
+        o.phase += o.speed * dt;
+        var a = o.a * R, b = o.b * R;
+        /* Ecuación paramétrica de elipse rotada por angle */
+        var ex = a * Math.cos(o.phase) * Math.cos(o.angle) - b * Math.sin(o.phase) * Math.sin(o.angle);
+        var ey = a * Math.cos(o.phase) * Math.sin(o.angle) + b * Math.sin(o.phase) * Math.cos(o.angle);
+        if (els[i]) {
+          els[i].style.left = (R + ex) + 'px';
+          els[i].style.top  = (R + ey) + 'px';
+        }
+      });
+
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  })();
+  </script>
+</body>
+</html>

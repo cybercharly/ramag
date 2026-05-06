@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros — RAMAG Integración e Ingeniería</title>
+  <link rel="icon" type="image/png" href="img/ramag_icon.png" />
+  <meta name="description" content="Conoce RAMAG: más de 12 años como empresa MRO (Mantenimiento, Reparación y Operación) especializada en transmisión de potencia, fabricación de equipos y servicio industrial en Jalisco, México." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary: '#0C3B52', 'primary-dark': '#082A3A',
+          'primary-light': '#175D8A', accent: '#00B9D8',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-poppins">
+
+  <!-- Top Bar -->
+  <div id="top-bar" class="hidden md:block">
+    <div class="topbar-inner">
+      <div class="flex items-center gap-5">
+        <a href="tel:+523312245803"><i class="fas fa-phone-alt mr-1"></i> +52 33 1224 5803</a>
+        <a href="mailto:contacto@ramag.mx"><i class="fas fa-envelope mr-1"></i> contacto@ramag.mx</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-clock mr-1"></i> Lun–Vie 9:00–18:00</span>
+        <a data-wa="Hola, quisiera solicitar una cotización." class="text-accent font-semibold">
+          <i class="fas fa-comments mr-1"></i> Solicitar cotización
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html"      class="nav-link">Inicio</a>
+        <a href="servicios.html"  class="nav-link">Servicios</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
+        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="clientes.html"   class="nav-link">Clientes</a>
+        <a href="nosotros.html"   class="nav-link">Nosotros</a>
+        <a href="contacto.html"   class="nav-link">Contacto</a>
+      </div>
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
+        <i class="fab fa-whatsapp mr-2"></i>Cotizar por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <span>Nosotros</span>
+      </div>
+      <h1>Quiénes somos</h1>
+      <p>Una empresa que cubre las necesidades MRO (Mantenimiento, Reparación y Operación) más allá del refaccionamiento. Más de 12 años de experiencia sirviendo de forma integral a la industria nacional.</p>
+    </div>
+  </section>
+
+  <!-- Mission / Identity -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="intro-grid animate-up">
+        <div>
+          <span class="eyebrow">Nuestra identidad</span>
+          <h2 class="section-heading">MRO (Mantenimiento, Reparación y Operación) más allá del refaccionamiento</h2>
+          <p class="section-sub">
+            En RAMAG no solo vendemos productos: ofrecemos <strong>soluciones integrales</strong> que se adaptan
+            a las necesidades específicas de cada planta. Somos parte de la cadena productiva de nuestros clientes,
+            no un simple proveedor de piezas.
+          </p>
+          <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1rem">
+            <div style="display:flex;align-items:flex-start;gap:1rem">
+              <div style="width:2.5rem;height:2.5rem;background:var(--surface);border-radius:.375rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--primary)">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:.2rem">Misión</div>
+                <div style="font-size:.85rem;color:var(--text-light);line-height:1.65">
+                  Ser el socio estratégico que impulsa la continuidad operativa de nuestros clientes,
+                  ofreciendo soluciones MRO (Mantenimiento, Reparación y Operación) integrales con la más alta calidad técnica y humana.
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem">
+              <div style="width:2.5rem;height:2.5rem;background:var(--surface);border-radius:.375rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--primary)">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:.2rem">Visión</div>
+                <div style="font-size:.85rem;color:var(--text-light);line-height:1.65">
+                  Ser reconocidos como la empresa de integración e ingeniería industrial más confiable de la región,
+                  expandiendo nuestra presencia en los sectores más exigentes de México.
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem">
+              <div style="width:2.5rem;height:2.5rem;background:var(--surface);border-radius:.375rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--primary)">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:.2rem">Propósito</div>
+                <div style="font-size:.85rem;color:var(--text-light);line-height:1.65">
+                  Transformar la forma en que la industria accede a soluciones de mantenimiento y operación,
+                  priorizando el resultado de nuestros clientes sobre la simple transacción comercial.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Stats visual -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div style="background:var(--primary);border-radius:var(--radius-lg);padding:2rem;color:white;text-align:center">
+              <div class="ns-stat" data-target="12" data-suffix="+" style="font-size:3.5rem;font-weight:900;color:var(--accent);line-height:1;transition:text-shadow .3s ease">12+</div>
+              <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-top:.25rem">Años de experiencia</div>
+            </div>
+            <div style="background:var(--dark-3);border-radius:var(--radius-lg);padding:2rem;color:white;text-align:center">
+              <div class="ns-stat" data-target="9" data-suffix="" style="font-size:3.5rem;font-weight:900;color:var(--accent);line-height:1;transition:text-shadow .3s ease">9</div>
+              <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-top:.25rem">Industrias atendidas</div>
+            </div>
+            <div style="background:var(--dark-3);border-radius:var(--radius-lg);padding:2rem;color:white;text-align:center">
+              <div class="ns-stat" data-target="8" data-suffix="+" style="font-size:3.5rem;font-weight:900;color:var(--accent);line-height:1;transition:text-shadow .3s ease">8+</div>
+              <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-top:.25rem">Marcas representadas</div>
+            </div>
+            <div style="background:var(--primary);border-radius:var(--radius-lg);padding:2rem;color:white;text-align:center">
+              <div class="ns-stat" data-target="50" data-suffix="%+" style="font-size:3.5rem;font-weight:900;color:var(--accent);line-height:1;transition:text-shadow .3s ease">50%+</div>
+              <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-top:.25rem">Ahorro en reparación</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our approach -->
+  <section class="section section--surface">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Nuestro enfoque</span>
+        <h2 class="section-heading section-heading--center" style="margin:0 auto">Cómo trabajamos</h2>
+        <p class="section-sub" style="margin-inline:auto;text-align:center">
+          Un proceso estructurado que garantiza la solución correcta, en el tiempo correcto.
+        </p>
+      </div>
+      <div style="max-width:680px;margin:3rem auto 0;padding-left:1rem" class="animate-up delay-1">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Paso 01</div>
+            <div class="timeline-title">Diagnóstico y análisis de necesidad</div>
+            <div class="timeline-text">Escuchamos a tu equipo técnico, visitamos la planta (si aplica) e identificamos con precisión el problema o requerimiento. Nunca asumimos: verificamos.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Paso 02</div>
+            <div class="timeline-title">Selección técnica y propuesta</div>
+            <div class="timeline-text">Con base en el diagnóstico, seleccionamos la solución óptima considerando especificaciones técnicas, disponibilidad, costo y tiempo de entrega.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Paso 03</div>
+            <div class="timeline-title">Suministro e integración</div>
+            <div class="timeline-text">Entregamos el producto o ejecutamos el servicio con nuestro personal calificado. Garantizamos la correcta integración con tus sistemas existentes.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Paso 04</div>
+            <div class="timeline-title">Puesta en marcha y validación</div>
+            <div class="timeline-text">Acompañamos la puesta en marcha y verificamos que la solución funcione según las especificaciones. Documentamos el trabajo realizado.</div>
+          </div>
+          <div class="timeline-item" style="padding-bottom:0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Paso 05</div>
+            <div class="timeline-title">Seguimiento y soporte continuo</div>
+            <div class="timeline-text">Mantenemos contacto post-servicio. Ofrecemos pólizas de mantenimiento y estamos disponibles para cualquier consulta técnica.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="animate-up">
+        <span class="eyebrow">Nuestros valores</span>
+        <h2 class="section-heading">Los principios que nos guían</h2>
+      </div>
+      <div class="values-grid animate-up delay-1">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-handshake"></i></div>
+          <div class="value-title">Compromiso</div>
+          <div class="value-text">Nos comprometemos con el resultado, no solo con la entrega. El éxito de tu operación es nuestro éxito.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-certificate"></i></div>
+          <div class="value-title">Calidad</div>
+          <div class="value-text">Trabajamos exclusivamente con marcas certificadas y procesos técnicos validados para garantizar resultados durables.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="value-title">Innovación</div>
+          <div class="value-text">Buscamos constantemente mejores soluciones tecnológicas para optimizar el rendimiento de los equipos de nuestros clientes.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-clock"></i></div>
+          <div class="value-title">Agilidad</div>
+          <div class="value-text">Entendemos que el tiempo de paro tiene un costo. Respondemos con rapidez y mantenemos stock de partes críticas.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-users"></i></div>
+          <div class="value-title">Confianza</div>
+          <div class="value-text">Construimos relaciones de largo plazo basadas en la transparencia técnica y comercial en cada interacción.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="value-title">Respaldo</div>
+          <div class="value-text">Somos distribuidores autorizados y certificados. Cada producto y servicio viene con el respaldo de sus fabricantes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands / Certifications -->
+  <section class="section brands-section">
+    <div class="section-inner">
+      <div class="text-center animate-up">
+        <span class="eyebrow">Respaldo técnico</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto">
+          Certificados y avalados
+        </h2>
+        <p class="section-sub section-sub--white" style="margin-inline:auto;text-align:center">
+          Nuestras alianzas con fabricantes líderes nos permiten ofrecerte productos auténticos y servicios certificados.
+        </p>
+      </div>
+      <div class="brands-grid animate-up delay-1">
+        <span class="brand-badge"><i class="fas fa-star mr-1" style="color:var(--accent);font-size:.7rem"></i> SEW-Eurodrive</span>
+        <span class="brand-badge">SEID Cadenas</span>
+        <span class="brand-badge">Safari Belting · ULTRA-TUFF</span>
+        <span class="brand-badge">PII</span>
+        <span class="brand-badge">Webster Industries</span>
+        <span class="brand-badge">Martin Sprocket &amp; Gear</span>
+        <span class="brand-badge">BeltService Corporation</span>
+        <span class="brand-badge">Regal Rexnord</span>
+      </div>
+      <div class="text-center mt-8 animate-up delay-2">
+        <div style="background:rgba(0,185,216,.1);border:1px solid rgba(0,185,216,.3);border-radius:var(--radius);padding:1.25rem 2rem;display:inline-flex;align-items:center;gap:1rem">
+          <i class="fas fa-award" style="color:var(--accent);font-size:1.5rem"></i>
+          <div style="text-align:left">
+            <div style="font-size:.82rem;font-weight:700;color:white">Certificados y avalados por SEW-Eurodrive</div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.6)">Servicio de diagnóstico y reparación · Distribuidor autorizado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2>¿Quieres ser parte de nuestros clientes?</h2>
+      <p>Platícanos sobre tu planta y tus necesidades. Trabajemos juntos para optimizar tu operación.</p>
+      <div class="cta-band-btns">
+        <a data-wa="Hola RAMAG, me gustaría conocer más sobre cómo pueden apoyar a mi empresa." class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Platiquemos
+        </a>
+        <a href="contacto.html" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Formulario de contacto
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <p class="footer-desc">Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
+          <a href="servicios.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Servicios</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Productos</a>
+          <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
+          <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Calle El Laurel 500-A5, La Alameda, Jal.</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+523312245803">+52 33 1224 5803</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Vie · 9:00 – 18:00 h</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RAMAG Integración e Ingeniería. Todos los derechos reservados.</span>
+      <a href="https://ramag.mx">ramag.mx</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Hola RAMAG, me gustaría obtener información sobre su empresa y servicios." aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  /* ── Nosotros · Stats con count-up + transición de color ── */
+  (function () {
+    var stats = document.querySelectorAll('.ns-stat');
+    if (!stats.length) return;
+
+    /* Paleta: oro → blanco → cyan accent (color final) */
+    var GOLD  = [255, 215,   0];
+    var WHITE = [255, 255, 255];
+    var CYAN  = [  0, 185, 216];
+
+    function lerp(a, b, t) { return Math.round(a + (b - a) * t); }
+    function rgb(arr)      { return 'rgb(' + arr[0] + ',' + arr[1] + ',' + arr[2] + ')'; }
+
+    function colorAt(t) {
+      var from, to, local;
+      if (t < 0.5) { from = GOLD;  to = WHITE; local = t * 2; }
+      else         { from = WHITE; to = CYAN;  local = (t - 0.5) * 2; }
+      return rgb([
+        lerp(from[0], to[0], local),
+        lerp(from[1], to[1], local),
+        lerp(from[2], to[2], local)
+      ]);
+    }
+
+    function animate(el) {
+      var target   = parseInt(el.dataset.target, 10);
+      var suffix   = el.dataset.suffix || '';
+      var duration = 2000;
+      var start    = null;
+
+      el.textContent = '0' + suffix;
+
+      function tick(ts) {
+        if (!start) start = ts;
+        var t      = Math.min((ts - start) / duration, 1);
+        var eased  = 1 - Math.pow(1 - t, 3); /* ease-out cubic */
+
+        el.textContent      = Math.round(target * eased) + suffix;
+        el.style.color      = colorAt(eased);
+        el.style.textShadow = '0 0 ' + (24 * (1 - eased)) + 'px ' + colorAt(eased);
+
+        if (t < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent      = target + suffix;
+          el.style.color      = '';
+          el.style.textShadow = '';
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    stats.forEach(function (el) { obs.observe(el); });
+  })();
+  </script>
+</body>
+</html>

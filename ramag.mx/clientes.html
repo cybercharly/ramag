@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clientes — RAMAG Integración e Ingeniería</title>
+  <link rel="icon" type="image/png" href="img/ramag_icon.png" />
+  <meta name="description" content="Empresas que confían en RAMAG para sus soluciones MRO de transmisión de potencia: Sukarne, Tequila Patrón y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary: '#0C3B52', 'primary-dark': '#082A3A',
+          'primary-light': '#175D8A', accent: '#00B9D8',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-poppins">
+
+  <!-- Top Bar -->
+  <div id="top-bar" class="hidden md:block">
+    <div class="topbar-inner">
+      <div class="flex items-center gap-5">
+        <a href="tel:+523312245803"><i class="fas fa-phone-alt mr-1"></i> +52 33 1224 5803</a>
+        <a href="mailto:contacto@ramag.mx"><i class="fas fa-envelope mr-1"></i> contacto@ramag.mx</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-clock mr-1"></i> Lun–Vie 9:00–18:00</span>
+        <a data-wa="Hola, quisiera solicitar una cotización." class="text-accent font-semibold">
+          <i class="fas fa-comments mr-1"></i> Solicitar cotización
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html"      class="nav-link">Inicio</a>
+        <a href="servicios.html"  class="nav-link">Servicios</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
+        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="clientes.html"   class="nav-link">Clientes</a>
+        <a href="nosotros.html"   class="nav-link">Nosotros</a>
+        <a href="contacto.html"   class="nav-link">Contacto</a>
+      </div>
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
+        <i class="fab fa-whatsapp mr-2"></i>Cotizar por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <span>Clientes</span>
+      </div>
+      <h1>Nuestros clientes</h1>
+      <p>Empresas líderes de la industria confían en RAMAG para mantener su operación corriendo. Nuestra respuesta técnica y respaldo de marca son su garantía de continuidad.</p>
+    </div>
+  </section>
+
+  <!-- Stats rápidos -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-number" data-target="9" data-suffix="+">9+</div>
+        <div class="stat-label">Industrias atendidas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="12" data-suffix="+">12+</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+        <div class="stat-label">Garantía en productos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Jalisco</div>
+        <div class="stat-label">Cobertura principal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logos de clientes -->
+  <section class="section" id="logos">
+    <div class="section-inner">
+      <div class="text-center animate-up" style="margin-bottom:3.5rem">
+        <span class="eyebrow">Empresas que nos eligen</span>
+        <h2 class="section-heading section-heading--center" style="margin:0 auto">
+          Trabajan con nosotros
+        </h2>
+        <p class="section-sub" style="max-width:54ch;margin-inline:auto;text-align:center">
+          Desde plantas de producción hasta líneas de proceso crítico,
+          nuestros clientes eligen RAMAG por nuestra velocidad de respuesta y criterio técnico.
+        </p>
+      </div>
+
+      <!-- Grid de logos -->
+      <div class="animate-up delay-1" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;margin-bottom:4rem">
+
+        <!-- Sukarne -->
+        <div style="background:white;border:1px solid var(--border);border-radius:1rem;padding:2.25rem 2rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;transition:var(--trans);box-shadow:var(--shadow-sm)"
+             onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='var(--accent)';this.style.boxShadow='0 8px 32px rgba(0,185,216,.18)'"
+             onmouseout="this.style.transform='';this.style.borderColor='var(--border)';this.style.boxShadow='var(--shadow-sm)'">
+          <div style="height:4rem;display:flex;align-items:center;justify-content:center">
+            <img src="clients/SUKARNE-LOGO.png" alt="Sukarne" style="max-height:4rem;max-width:160px;width:auto;object-fit:contain" />
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:.75rem;font-weight:700;color:var(--text);margin-bottom:.2rem">Sukarne</div>
+            <div style="font-size:.68rem;color:var(--text-muted)">Industria cárnica</div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+            <span style="font-size:.62rem;font-weight:600;padding:.25rem .65rem;background:rgba(12,59,82,.08);color:var(--primary);border-radius:2rem">Transmisión</span>
+            <span style="font-size:.62rem;font-weight:600;padding:.25rem .65rem;background:rgba(12,59,82,.08);color:var(--primary);border-radius:2rem">Cadenas</span>
+          </div>
+        </div>
+
+        <!-- Tequila Patrón -->
+        <div style="background:white;border:1px solid var(--border);border-radius:1rem;padding:2.25rem 2rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;transition:var(--trans);box-shadow:var(--shadow-sm)"
+             onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='var(--accent)';this.style.boxShadow='0 8px 32px rgba(0,185,216,.18)'"
+             onmouseout="this.style.transform='';this.style.borderColor='var(--border)';this.style.boxShadow='var(--shadow-sm)'">
+          <div style="height:4rem;display:flex;align-items:center;justify-content:center">
+            <img src="clients/tequila_patron.png" alt="Tequila Patrón" style="max-height:4rem;max-width:160px;width:auto;object-fit:contain" />
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:.75rem;font-weight:700;color:var(--text);margin-bottom:.2rem">Tequila Patrón</div>
+            <div style="font-size:.68rem;color:var(--text-muted)">Industria tequilera</div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+            <span style="font-size:.62rem;font-weight:600;padding:.25rem .65rem;background:rgba(12,59,82,.08);color:var(--primary);border-radius:2rem">SEW</span>
+            <span style="font-size:.62rem;font-weight:600;padding:.25rem .65rem;background:rgba(12,59,82,.08);color:var(--primary);border-radius:2rem">Transportadores</span>
+          </div>
+        </div>
+
+        <!-- Placeholder 1 -->
+        <div style="background:var(--surface);border:1.5px dashed var(--border);border-radius:1rem;padding:2.25rem 2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;min-height:180px">
+          <div style="width:3rem;height:3rem;background:white;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center">
+            <i class="fas fa-plus" style="color:var(--text-muted);font-size:1rem"></i>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted)">Próximo cliente</div>
+            <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Tu empresa podría estar aquí</div>
+          </div>
+        </div>
+
+        <!-- Placeholder 2 -->
+        <div style="background:var(--surface);border:1.5px dashed var(--border);border-radius:1rem;padding:2.25rem 2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;min-height:180px">
+          <div style="width:3rem;height:3rem;background:white;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center">
+            <i class="fas fa-plus" style="color:var(--text-muted);font-size:1rem"></i>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted)">Próximo cliente</div>
+            <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Tu empresa podría estar aquí</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Industrias que atendemos -->
+  <section class="section section--surface" id="industrias">
+    <div class="section-inner">
+      <div class="text-center animate-up" style="margin-bottom:3rem">
+        <span class="eyebrow">Sectores de cobertura</span>
+        <h2 class="section-heading section-heading--center" style="margin:0 auto">Industrias que atendemos</h2>
+        <p class="section-sub" style="max-width:52ch;margin-inline:auto;text-align:center">
+          Nuestra experiencia abarca los sectores más exigentes en Jalisco y la región occidente.
+        </p>
+      </div>
+      <div class="animate-up delay-1" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;max-width:900px;margin:0 auto">
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-wine-bottle" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Tequilera</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-drumstick-bite" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Cárnica</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-hard-hat" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Cementera</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-flask" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Química</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-car" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Automotriz</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-utensils" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Alimentos</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-lightbulb" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Energía</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-pills" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Farmacéutica</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;text-align:center;transition:var(--trans)"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+          <i class="fas fa-building" style="color:var(--accent);font-size:1.5rem;margin-bottom:.6rem;display:block"></i>
+          <div style="font-size:.78rem;font-weight:600;color:var(--text)">Manufactura</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section section--primary" id="testimonios">
+    <div class="section-inner">
+      <div class="text-center animate-up" style="margin-bottom:3rem">
+        <span class="eyebrow">Lo que dicen de nosotros</span>
+        <h2 class="section-heading section-heading--white section-heading--center" style="margin:0 auto">Testimonios</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem">
+
+        <!-- Testimonio 1 -->
+        <div class="animate-up" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1.75rem">
+          <div style="color:var(--accent);font-size:1.5rem;margin-bottom:1rem;line-height:1">"</div>
+          <p style="color:rgba(255,255,255,.8);font-size:.88rem;line-height:1.75;margin-bottom:1.25rem;font-style:italic">
+            Cuando tuvimos un paro en plena temporada alta, RAMAG respondió en menos de dos horas. Tienen el equipo, el conocimiento y la disposición. Difícil de encontrar en un solo proveedor.
+          </p>
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:2.5rem;height:2.5rem;background:rgba(0,185,216,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i class="fas fa-user" style="color:var(--accent);font-size:.9rem"></i>
+            </div>
+            <div>
+              <div style="font-size:.82rem;font-weight:700;color:white">Responsable de Mantenimiento</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.45)">Industria tequilera · Jalisco</div>
+            </div>
+          </div>
+          <div style="margin-top:.75rem;font-size:.62rem;color:rgba(255,255,255,.25);font-style:italic">Testimonio ilustrativo — reemplazar con referencia real</div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="animate-up delay-2" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1.75rem">
+          <div style="color:var(--accent);font-size:1.5rem;margin-bottom:1rem;line-height:1">"</div>
+          <p style="color:rgba(255,255,255,.8);font-size:.88rem;line-height:1.75;margin-bottom:1.25rem;font-style:italic">
+            Llevamos más de tres años trabajando con RAMAG. Siempre nos entregan a tiempo y el soporte técnico post-venta es excelente. El respaldo de SEW-Eurodrive a través de ellos nos da mucha tranquilidad.
+          </p>
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:2.5rem;height:2.5rem;background:rgba(0,185,216,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i class="fas fa-user" style="color:var(--accent);font-size:.9rem"></i>
+            </div>
+            <div>
+              <div style="font-size:.82rem;font-weight:700;color:white">Gerente de Planta</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.45)">Industria cárnica · Jalisco</div>
+            </div>
+          </div>
+          <div style="margin-top:.75rem;font-size:.62rem;color:rgba(255,255,255,.25);font-style:italic">Testimonio ilustrativo — reemplazar con referencia real</div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="animate-up delay-4" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1.75rem">
+          <div style="color:var(--accent);font-size:1.5rem;margin-bottom:1rem;line-height:1">"</div>
+          <p style="color:rgba(255,255,255,.8);font-size:.88rem;line-height:1.75;margin-bottom:1.25rem;font-style:italic">
+            Lo que más valoramos es que no solo venden el equipo. RAMAG te asesora en la selección correcta, hace la instalación y resuelve dudas después. Es un servicio completo.
+          </p>
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:2.5rem;height:2.5rem;background:rgba(0,185,216,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i class="fas fa-user" style="color:var(--accent);font-size:.9rem"></i>
+            </div>
+            <div>
+              <div style="font-size:.82rem;font-weight:700;color:white">Jefe de Ingeniería</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.45)">Industria química · Jalisco</div>
+            </div>
+          </div>
+          <div style="margin-top:.75rem;font-size:.62rem;color:rgba(255,255,255,.25);font-style:italic">Testimonio ilustrativo — reemplazar con referencia real</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA unirse -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2>¿Ya trabajas con nosotros?</h2>
+      <p>Queremos incluir tu empresa en esta página. Escríbenos y con gusto coordinamos los detalles.</p>
+      <div class="cta-band-btns">
+        <a data-wa="Hola RAMAG, quisiera que incluyeran el logo de nuestra empresa en su sitio web como cliente." class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Incluir mi empresa
+        </a>
+        <a href="contacto.html" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Contáctanos
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <p class="footer-desc">Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
+          <a href="servicios.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Servicios</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Productos</a>
+          <a href="proyectos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Proyectos</a>
+          <a href="clientes.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Clientes</a>
+          <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
+          <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Calle El Laurel 500-A5, La Alameda, Jal.</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+523312245803">+52 33 1224 5803</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:contacto@ramag.mx">contacto@ramag.mx</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Vie · 9:00 – 18:00 h</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RAMAG Integración e Ingeniería. Todos los derechos reservados.</span>
+      <a href="https://ramag.mx">ramag.mx</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Hola RAMAG, vi la página de clientes y me gustaría obtener información." aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
