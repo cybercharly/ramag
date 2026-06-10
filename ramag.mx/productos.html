@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Productos — RAMAG Integración e Ingeniería</title>
+  <title>Proyectos — RAMAG Integración e Ingeniería</title>
   <link rel="icon" type="image/png" href="img/ramag_icon.png" />
-  <meta name="description" content="Catálogo de productos RAMAG: motorreductores SEW-Eurodrive, bandas modulares ULTRA-TUFF, cadenas de ingeniería, bandas transportadoras y componentes de transmisión de potencia." />
+  <meta name="description" content="Casos de éxito y proyectos ejecutados por RAMAG: soluciones de transmisión de potencia MRO para la industria tequilera, cementera, química y más." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -15,8 +15,8 @@
     tailwind.config = {
       theme: { extend: {
         colors: {
-          primary: '#0C3B52', 'primary-dark': '#082A3A',
-          'primary-light': '#175D8A', accent: '#00B9D8',
+          primary: '#071C2C', 'primary-dark': '#040E17',
+          'primary-light': '#1A4361', accent: '#00ADD8',
         },
         fontFamily: { poppins: ['Poppins', 'sans-serif'] }
       }}
@@ -46,16 +46,16 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="img/logo_ramag_blanco.png" alt="RAMAG Logo" />
+        <img src="img/RAMAG_LOGO_BLANCO.png" alt="RAMAG Logo" />
       </a>
       <div class="nav-links">
         <a href="index.html"      class="nav-link">Inicio</a>
         <a href="alcance.html"    class="nav-link">Alcance</a>
-        <a href="proyectos.html"  class="nav-link">Proyectos</a>
+        <a href="productos.html"  class="nav-link">Productos</a>
         <a href="nosotros.html"   class="nav-link">Nosotros</a>
         <a href="contacto.html"   class="nav-link">Contacto</a>
       </div>
-      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus productos." class="btn btn-primary nav-cta hidden md:inline-flex">
+      <a data-wa="Hola RAMAG, me gustaría obtener información sobre sus servicios." class="btn btn-primary nav-cta hidden md:inline-flex">
         <i class="fab fa-whatsapp"></i> Cotizar
       </a>
       <button id="menu-btn" aria-label="Menú"><i class="fas fa-bars"></i></button>
@@ -63,7 +63,7 @@
     <div id="mobile-menu">
       <a href="index.html">Inicio</a>
       <a href="alcance.html">Alcance</a>
-      <a href="proyectos.html">Proyectos</a>
+      <a href="productos.html">Productos</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="contacto.html">Contacto</a>
       <a data-wa="Hola RAMAG, me gustaría obtener información." class="text-accent font-semibold">
@@ -80,542 +80,337 @@
         <span>/</span>
         <span>Productos</span>
       </div>
-      <h1>Catálogo de productos</h1>
-      <p>Distribuimos las marcas más confiables del mercado. Cada producto es seleccionado y respaldado por nuestra experiencia técnica para garantizar el mejor desempeño en tu aplicación.</p>
+      <h1>Casos de éxito</h1>
+      <p>Soluciones reales para la industria. Cada proyecto refleja nuestra capacidad de respuesta, criterio técnico y compromiso con la continuidad operativa de nuestros clientes.</p>
     </div>
   </section>
 
-  <!-- Catálogo descargable -->
-  <section class="section section--darker" style="padding:5rem 1.5rem;position:relative;overflow:hidden">
-    <!-- Fondo decorativo -->
-    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 20% 50%,rgba(0,185,216,.08),transparent 60%),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(12,59,82,.5),transparent 55%)"></div>
-    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px"></div>
-
-    <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
-
-        <!-- Texto izquierda -->
-        <div class="animate-left">
-          <span class="eyebrow">Presentación corporativa</span>
-          <h2 class="section-heading section-heading--white" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">
-            Descarga nuestro<br>catálogo <span style="color:var(--accent)">2026</span>
-          </h2>
-          <p style="color:rgba(255,255,255,.68);font-size:.95rem;line-height:1.75;margin-top:.75rem;max-width:44ch">
-            Conoce a fondo nuestra oferta de productos, servicios, marcas representadas
-            e industrias que atendemos. Todo en un solo documento.
-          </p>
-
-          <!-- Bullets de contenido -->
-          <div style="margin-top:2rem;display:flex;flex-direction:column;gap:.75rem">
-            <div style="display:flex;align-items:center;gap:.85rem;font-size:.85rem;color:rgba(255,255,255,.75)">
-              <span style="width:1.5rem;height:1.5rem;background:rgba(0,185,216,.15);border:1px solid rgba(0,185,216,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-check" style="font-size:.6rem;color:var(--accent)"></i></span>
-              Portafolio completo de servicios y soluciones
-            </div>
-            <div style="display:flex;align-items:center;gap:.85rem;font-size:.85rem;color:rgba(255,255,255,.75)">
-              <span style="width:1.5rem;height:1.5rem;background:rgba(0,185,216,.15);border:1px solid rgba(0,185,216,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-check" style="font-size:.6rem;color:var(--accent)"></i></span>
-              Catálogo de marcas representadas: SEW-Eurodrive, Safari Belting y más
-            </div>
-            <div style="display:flex;align-items:center;gap:.85rem;font-size:.85rem;color:rgba(255,255,255,.75)">
-              <span style="width:1.5rem;height:1.5rem;background:rgba(0,185,216,.15);border:1px solid rgba(0,185,216,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-check" style="font-size:.6rem;color:var(--accent)"></i></span>
-              Industrias atendidas y casos de aplicación
-            </div>
-            <div style="display:flex;align-items:center;gap:.85rem;font-size:.85rem;color:rgba(255,255,255,.75)">
-              <span style="width:1.5rem;height:1.5rem;background:rgba(0,185,216,.15);border:1px solid rgba(0,185,216,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-check" style="font-size:.6rem;color:var(--accent)"></i></span>
-              Propuesta de valor y diferenciadores clave
-            </div>
-            <div style="display:flex;align-items:center;gap:.85rem;font-size:.85rem;color:rgba(255,255,255,.75)">
-              <span style="width:1.5rem;height:1.5rem;background:rgba(0,185,216,.15);border:1px solid rgba(0,185,216,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-check" style="font-size:.6rem;color:var(--accent)"></i></span>
-              Proyectos ejecutados con resultados tangibles
-            </div>
-          </div>
-
-          <!-- Botones -->
-          <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap">
-            <a href="pdf/ramag_2026.pdf" download="RAMAG_Catalogo_2026.pdf"
-               style="display:inline-flex;align-items:center;gap:.65rem;padding:.9rem 1.75rem;background:var(--accent);color:var(--dark);font-family:var(--font);font-size:.92rem;font-weight:700;border-radius:.5rem;border:2px solid var(--accent);transition:all .3s ease;text-decoration:none"
-               onmouseover="this.style.background='var(--accent-dark)';this.style.borderColor='var(--accent-dark)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(0,185,216,.4)'"
-               onmouseout="this.style.background='var(--accent)';this.style.borderColor='var(--accent)';this.style.transform='translateY(0)';this.style.boxShadow='none'">
-              <i class="fas fa-download"></i> Descargar catálogo
-            </a>
-            <a href="pdf/ramag_2026.pdf" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:.65rem;padding:.9rem 1.75rem;background:transparent;color:white;font-family:var(--font);font-size:.92rem;font-weight:600;border-radius:.5rem;border:2px solid rgba(255,255,255,.35);transition:all .3s ease;text-decoration:none"
-               onmouseover="this.style.borderColor='white';this.style.background='rgba(255,255,255,.07)';this.style.transform='translateY(-2px)'"
-               onmouseout="this.style.borderColor='rgba(255,255,255,.35)';this.style.background='transparent';this.style.transform='translateY(0)'">
-              <i class="fas fa-eye"></i> Ver en línea
-            </a>
-          </div>
-          <p style="margin-top:1rem;font-size:.75rem;color:rgba(255,255,255,.35)">
-            <i class="fas fa-file-pdf" style="color:rgba(255,255,255,.4)"></i>
-            &nbsp;PDF · 3.7 MB · Actualizado 2026
-          </p>
-        </div>
-
-        <!-- Visual dinámico derecha -->
-        <style>
-          @keyframes cat-float   { 0%,100%{transform:translateY(0)}  50%{transform:translateY(-14px)} }
-          @keyframes cat-spin    { to{transform:rotate(360deg)} }
-          @keyframes cat-spin-r  { to{transform:rotate(-360deg)} }
-          @keyframes cat-pulse   { 0%,100%{opacity:.35;transform:scale(1)} 50%{opacity:.7;transform:scale(1.08)} }
-          @keyframes cat-scan    { 0%{top:-4px;opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{top:100%;opacity:0} }
-          @keyframes cat-glow    { 0%,100%{box-shadow:0 0 18px rgba(0,185,216,.25)} 50%{box-shadow:0 0 38px rgba(0,185,216,.55)} }
-          @keyframes cat-badge1  { 0%,100%{transform:translateY(0) translateX(0)} 50%{transform:translateY(-6px) translateX(3px)} }
-          @keyframes cat-badge2  { 0%,100%{transform:translateY(0) translateX(0)} 50%{transform:translateY(5px) translateX(-4px)} }
-          @keyframes cat-badge3  { 0%,100%{transform:translateY(0) translateX(0)} 50%{transform:translateY(-4px) translateX(-3px)} }
-          @keyframes cat-shimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
-          .cat-card-wrap { animation: cat-float 5s ease-in-out infinite; }
-          .cat-gear-big  { animation: cat-spin  18s linear infinite; }
-          .cat-gear-mid  { animation: cat-spin-r 12s linear infinite; }
-          .cat-gear-sm   { animation: cat-spin  8s linear infinite; }
-          .cat-ring      { animation: cat-pulse 3s ease-in-out infinite; }
-          .cat-ring2     { animation: cat-pulse 3s ease-in-out infinite; animation-delay:1.5s; }
-          .cat-scan-line { animation: cat-scan  3.5s ease-in-out infinite; }
-          .cat-card-main { animation: cat-glow  3s ease-in-out infinite; }
-          .cat-b1 { animation: cat-badge1 4s ease-in-out infinite; }
-          .cat-b2 { animation: cat-badge2 5s ease-in-out infinite; animation-delay:.8s; }
-          .cat-b3 { animation: cat-badge3 4.5s ease-in-out infinite; animation-delay:1.4s; }
-          .cat-logo-shimmer {
-            background: linear-gradient(90deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,1) 40%, rgba(0,185,216,.9) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,.8) 100%);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: cat-shimmer 4s linear infinite;
-          }
-        </style>
-
-        <div class="animate-right" style="display:flex;justify-content:center;align-items:center">
-          <div class="cat-card-wrap" style="position:relative;width:100%;max-width:340px">
-
-            <!-- Glow reflejo inferior -->
-            <div style="position:absolute;bottom:-2rem;left:50%;transform:translateX(-50%);width:70%;height:2.5rem;background:rgba(0,185,216,.2);filter:blur(24px);border-radius:50%"></div>
-
-            <!-- Tarjeta principal -->
-            <div class="cat-card-main" style="background:linear-gradient(145deg,#0d4d6e 0%,#082A3A 100%);border-radius:1.5rem;padding:2.25rem 2rem;border:1px solid rgba(0,185,216,.25);position:relative;overflow:hidden">
-
-              <!-- Grid de fondo -->
-              <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,185,216,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,185,216,.04) 1px,transparent 1px);background-size:28px 28px"></div>
-
-              <!-- Línea de escaneo -->
-              <div class="cat-scan-line" style="position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(0,185,216,.7),transparent);z-index:3"></div>
-
-              <!-- Engranajes decorativos de fondo -->
-              <div class="cat-gear-big" style="position:absolute;right:-2.5rem;top:-2.5rem;font-size:9rem;color:rgba(0,185,216,.06);pointer-events:none;z-index:0">
-                <i class="fas fa-cog"></i>
-              </div>
-              <div class="cat-gear-mid" style="position:absolute;left:-1.5rem;bottom:-1rem;font-size:6rem;color:rgba(0,185,216,.05);pointer-events:none;z-index:0">
-                <i class="fas fa-cog"></i>
-              </div>
-
-              <!-- Contenido principal -->
-              <div style="position:relative;z-index:2">
-
-                <!-- Logo RAMAG con shimmer -->
-                <div style="margin-bottom:1.5rem">
-                  <img src="img/logo_ramag_blanco.png" alt="RAMAG" style="height:2.4rem;width:auto;opacity:.95" />
-                </div>
-
-                <!-- Engranaje central animado -->
-                <div style="display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;position:relative;height:130px">
-                  <!-- Anillo exterior pulsante -->
-                  <div class="cat-ring" style="position:absolute;width:120px;height:120px;border:1px dashed rgba(0,185,216,.25);border-radius:50%"></div>
-                  <div class="cat-ring2" style="position:absolute;width:88px;height:88px;border:1px solid rgba(0,185,216,.2);border-radius:50%"></div>
-                  <!-- Engranaje grande central -->
-                  <div class="cat-gear-big" style="position:absolute;font-size:3.8rem;color:rgba(0,185,216,.55)"><i class="fas fa-cog"></i></div>
-                  <!-- Engranaje pequeño satélite -->
-                  <div style="position:absolute;top:8px;right:calc(50% - 52px)">
-                    <div class="cat-gear-sm" style="font-size:1.4rem;color:rgba(0,185,216,.7)"><i class="fas fa-cog"></i></div>
-                  </div>
-                  <!-- Engranaje mediano satélite -->
-                  <div style="position:absolute;bottom:6px;left:calc(50% - 52px)">
-                    <div class="cat-gear-mid" style="font-size:1.8rem;color:rgba(0,185,216,.45)"><i class="fas fa-cog"></i></div>
-                  </div>
-                  <!-- Ícono PDF en el centro -->
-                  <div style="position:relative;z-index:4;width:2.8rem;height:2.8rem;background:var(--accent);border-radius:.5rem;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(0,185,216,.5)">
-                    <i class="fas fa-file-pdf" style="color:var(--dark);font-size:1.2rem"></i>
-                  </div>
-                </div>
-
-                <!-- Texto -->
-                <div style="text-align:center;margin-bottom:1.5rem">
-                  <div style="font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.3rem">INTEGRACIÓN E INGENIERÍA</div>
-                  <div style="font-size:.95rem;font-weight:800;color:white;line-height:1.3">Catálogo de productos<br><span style="color:var(--accent)">y servicios 2026</span></div>
-                </div>
-
-                <!-- Líneas tipo progreso animadas -->
-                <div style="display:flex;flex-direction:column;gap:.45rem">
-                  <div style="height:4px;border-radius:3px;background:linear-gradient(90deg,rgba(0,185,216,.6),rgba(0,185,216,.1));animation:cat-shimmer 3s linear infinite;background-size:200% auto;width:100%"></div>
-                  <div style="height:4px;border-radius:3px;background:linear-gradient(90deg,rgba(0,185,216,.4),rgba(0,185,216,.05));animation:cat-shimmer 3s linear infinite;background-size:200% auto;width:78%;animation-delay:.4s"></div>
-                  <div style="height:4px;border-radius:3px;background:linear-gradient(90deg,rgba(0,185,216,.5),rgba(0,185,216,.08));animation:cat-shimmer 3s linear infinite;background-size:200% auto;width:88%;animation-delay:.8s"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Badges flotantes -->
-            <div class="cat-b1" style="position:absolute;top:-1rem;left:-1.5rem;background:var(--dark-2);border:1px solid rgba(0,185,216,.4);border-radius:.75rem;padding:.5rem .85rem;display:flex;align-items:center;gap:.5rem;box-shadow:0 8px 24px rgba(0,0,0,.4)">
-              <i class="fas fa-certificate" style="color:var(--accent);font-size:.85rem"></i>
-              <span style="font-size:.7rem;font-weight:700;color:white;white-space:nowrap">SEW-Eurodrive</span>
-            </div>
-            <div class="cat-b2" style="position:absolute;top:40%;right:-2rem;background:var(--dark-2);border:1px solid rgba(0,185,216,.35);border-radius:.75rem;padding:.5rem .85rem;display:flex;align-items:center;gap:.5rem;box-shadow:0 8px 24px rgba(0,0,0,.4)">
-              <i class="fas fa-industry" style="color:var(--accent);font-size:.85rem"></i>
-              <span style="font-size:.7rem;font-weight:700;color:white;white-space:nowrap">9 industrias</span>
-            </div>
-            <div class="cat-b3" style="position:absolute;bottom:1rem;left:-2rem;background:var(--dark-2);border:1px solid rgba(0,185,216,.35);border-radius:.75rem;padding:.5rem .85rem;display:flex;align-items:center;gap:.5rem;box-shadow:0 8px 24px rgba(0,0,0,.4)">
-              <i class="fas fa-shield-alt" style="color:var(--accent);font-size:.85rem"></i>
-              <span style="font-size:.7rem;font-weight:700;color:white;white-space:nowrap">100% Garantía</span>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Intro note -->
+  <!-- Nota de contenido -->
   <div class="section--primary" style="padding:1.5rem">
     <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
-      <i class="fas fa-info-circle" style="color:var(--accent);font-size:1.25rem;flex-shrink:0"></i>
+      <i class="fas fa-pencil-ruler" style="color:var(--accent);font-size:1.25rem;flex-shrink:0"></i>
       <p style="color:rgba(255,255,255,.8);font-size:.88rem;line-height:1.6">
-        <strong style="color:white">¿No encuentras tu referencia?</strong>
-        Contamos con acceso a catálogos completos de todos nuestros representados.
-        Escríbenos con el número de modelo o especificaciones y te ayudamos a encontrar la pieza exacta.
-        <a data-wa="Hola RAMAG, busco una pieza específica y necesito ayuda para identificarla." style="color:var(--accent);font-weight:600;margin-left:.5rem">
-          <i class="fab fa-whatsapp mr-1"></i>Consultar por pieza
+        <strong style="color:white">Sección en construcción.</strong>
+        Los casos mostrados son ilustrativos. Sustituir con proyectos reales antes del lanzamiento.
+        <a data-wa="Hola RAMAG, me gustaría compartir información sobre un proyecto ejecutado para incluirlo en el sitio." style="color:var(--accent);font-weight:600;margin-left:.5rem">
+          <i class="fab fa-whatsapp mr-1"></i>Enviar proyecto
         </a>
       </p>
     </div>
   </div>
 
-  <!-- Product 1: SEW Motorreductores -->
-  <section class="section product-section" id="sew">
-    <div class="section-inner">
-      <div class="prod-header animate-up">
-        <div class="prod-brand-badge">SEW-Eurodrive</div>
-        <div>
-          <h2 class="section-heading" style="margin-bottom:.25rem">Motorreductores serie 7, MoviGear y reductores industriales</h2>
-          <p class="section-sub">Para industria ligera y pesada. Potencias de 0.12 a 1,000 HP.</p>
-        </div>
-      </div>
-      <div class="products-grid animate-up delay-1">
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-cog"></i></div>
-          <div class="prod-card-title">Motorreductor Tipo R — Ejes Colineales</div>
-          <div class="prod-card-sub">Potencia: 0.12 a 1,000 HP. Montaje inline, alta eficiencia energética, múltiples variantes de montaje.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-cogs"></i></div>
-          <div class="prod-card-title">Motorreductor Tipo FA — Ejes Paralelos</div>
-          <div class="prod-card-sub">Potencia: 0.12 a 1,000 HP. Diseño compacto para espacios reducidos, alta capacidad de carga radial.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-sync"></i></div>
-          <div class="prod-card-title">Motorreductor Tipo K — Flecha 90°</div>
-          <div class="prod-card-sub">Potencia: 0.12 a 750 HP. Engranes cónicos de acero, ideal para aplicaciones en ángulo recto.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-circle-notch"></i></div>
-          <div class="prod-card-title">Motorreductor Tipo S — Corona y Sinfín</div>
-          <div class="prod-card-sub">Potencia: 0.12 a 500 HP. Flecha 90°, autobloqueo, relaciones de reducción altas en etapa simple.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-solar-panel"></i></div>
-          <div class="prod-card-title">Equipo Planetario</div>
-          <div class="prod-card-sub">Motorreductor con doble reducción. Flecha hueca o sólida. Alta densidad de par en volumen reducido.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-vector-square"></i></div>
-          <div class="prod-card-title">Equipo Serie X — Reductores Industriales</div>
-          <div class="prod-card-sub">Eje sólido redondo o cuadrado. Para aplicaciones de alto torque en industria pesada y minería.</div>
-        </div>
-        <div class="product-card" style="border-color:var(--accent)">
-          <div class="prod-card-icon" style="color:var(--accent)"><i class="fas fa-microchip"></i></div>
-          <div class="prod-card-title">MoviGear® — Sistema Mecatrónico</div>
-          <div class="prod-card-sub">Integración de motor, reductor y variador en una sola unidad. Ahorro energético hasta IE4. Comunicación industrial.</div>
-        </div>
-      </div>
-      <div class="mt-6 p-4 rounded-lg animate-up delay-2" style="background:var(--surface);border:1px solid var(--border)">
-        <p style="font-size:.85rem;color:var(--text-light)">
-          <i class="fas fa-info-circle" style="color:var(--accent)"></i>
-          <strong> Alcance del servicio:</strong> Homologación de marca · Selección adecuada a la aplicación ·
-          Desarrollo de proyectos · Descuentos especiales por proyecto o sustitución · Soporte técnico ·
-          Certificados de autenticidad.
-        </p>
-      </div>
-      <div class="mt-4 animate-up delay-3">
-        <a data-wa="Hola RAMAG, me interesa cotizar un motorreductor SEW-Eurodrive. Por favor, necesito asesoría técnica." class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Cotizar motorreductor SEW
-        </a>
+  <!-- Filtros -->
+  <section class="section section--surface" style="padding-bottom:0">
+    <div class="section-inner" style="padding-bottom:0">
+      <div class="animate-up" style="display:flex;gap:.65rem;flex-wrap:wrap;justify-content:center">
+        <button onclick="filtrar('todos')"    id="f-todos"    style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:var(--primary);color:white;border:2px solid var(--primary)">Todos</button>
+        <button onclick="filtrar('tequilera')" id="f-tequilera" style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:transparent;color:var(--text);border:2px solid var(--border)">Tequilera</button>
+        <button onclick="filtrar('cementera')" id="f-cementera" style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:transparent;color:var(--text);border:2px solid var(--border)">Cementera</button>
+        <button onclick="filtrar('quimica')"  id="f-quimica"  style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:transparent;color:var(--text);border:2px solid var(--border)">Química</button>
+        <button onclick="filtrar('alimentos')" id="f-alimentos" style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:transparent;color:var(--text);border:2px solid var(--border)">Alimentos</button>
+        <button onclick="filtrar('automotriz')" id="f-automotriz" style="padding:.5rem 1.2rem;border-radius:2rem;font-size:.78rem;font-weight:600;font-family:var(--font);cursor:pointer;transition:var(--trans);background:transparent;color:var(--text);border:2px solid var(--border)">Automotriz</button>
       </div>
     </div>
   </section>
 
-  <!-- Product 2: Safari Belting -->
-  <section class="section product-section section--surface" id="safari">
+  <!-- Grid de proyectos -->
+  <section class="section section--surface" id="proyectos-grid">
     <div class="section-inner">
-      <div class="prod-header animate-up">
-        <div class="prod-brand-badge">Safari Belting · ULTRA-TUFF™</div>
-        <div>
-          <h2 class="section-heading" style="margin-bottom:.25rem">Bandas modulares para industria de alimentos y bebidas</h2>
-          <p class="section-sub">Centro de ensamble propio · Homologación de marcas · Respaldo Chiorino Group.</p>
-        </div>
-      </div>
-      <div class="products-grid animate-up delay-1">
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-layer-group"></i></div>
-          <div class="prod-card-title">ULTRA-TUFF™ — Banda Modular Estándar</div>
-          <div class="prod-card-sub">Material exclusivo para áreas críticas de alto impacto. Resistente a temperaturas extremas y productos químicos de limpieza.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-utensils"></i></div>
-          <div class="prod-card-title">Banda Modular Sanitaria</div>
-          <div class="prod-card-sub">Grado alimenticio, fácil limpieza, conforme a normativas FDA. Ideal para industria cárnica y alimenticia.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-redo-alt"></i></div>
-          <div class="prod-card-title">Banda Curva / Espiral</div>
-          <div class="prod-card-sub">Para transportadores curvos y en espiral. Ensamble personalizado según geometría del equipo.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-fire"></i></div>
-          <div class="prod-card-title">Banda Alta Temperatura</div>
-          <div class="prod-card-sub">Para procesos de horneado, pasteurización y cocción. Material resistente a temperaturas superiores a 120°C.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-tint"></i></div>
-          <div class="prod-card-title">Banda para Líquidos / Drenaje</div>
-          <div class="prod-card-sub">Diseño con ranuras de drenaje para aplicaciones con fluidos. Industria cárnica, pesquera y de bebidas.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#e67e22"><i class="fas fa-exchange-alt"></i></div>
-          <div class="prod-card-title">Homologación de Marca</div>
-          <div class="prod-card-sub">Sustituimos bandas Intralox, Rexnord, Habasit y Uni (la variación depende de serie y modelo).</div>
-        </div>
-      </div>
-      <div class="mt-4 animate-up delay-2">
-        <a data-wa="Hola RAMAG, me interesa cotizar bandas modulares Safari Belting ULTRA-TUFF." class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Cotizar bandas modulares
-        </a>
-      </div>
-    </div>
-  </section>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem" id="cards-grid">
 
-  <!-- Product 3: Cadenas -->
-  <section class="section product-section" id="cadenas">
-    <div class="section-inner">
-      <div class="prod-header animate-up">
-        <div class="prod-brand-badge">SEID · Webster · PII</div>
-        <div>
-          <h2 class="section-heading" style="margin-bottom:.25rem">Cadenas de ingeniería y agrícolas</h2>
-          <p class="section-sub">Para industria pesada y ligera. Importadas de USA y fabricación especial nacional.</p>
-        </div>
-      </div>
-      <div class="products-grid animate-up delay-1">
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-link"></i></div>
-          <div class="prod-card-title">Cadenas de Ingeniería de Línea</div>
-          <div class="prod-card-sub">Importadas de USA (SEID, Webster, PII). Diversidad de series para industria pesada y ligera.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-tractor"></i></div>
-          <div class="prod-card-title">Cadenas Agrícolas</div>
-          <div class="prod-card-sub">Importación de cadenas agrícolas con diversos números de serie para diferentes tipos de industria y maquinaria.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-tools"></i></div>
-          <div class="prod-card-title">Cadenas Especiales Forjadas</div>
-          <div class="prod-card-sub">Fabricación y diseño en acero al carbón, forjadas e inoxidable según especificación técnica del cliente.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-cog"></i></div>
-          <div class="prod-card-title">Sprockets de Línea</div>
-          <div class="prod-card-sub">Ruedas dentadas de línea estándar para diferentes series y pasos de cadena. Acero y hierro fundido.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-drafting-compass"></i></div>
-          <div class="prod-card-title">Sprockets Fabricación Especial</div>
-          <div class="prod-card-sub">Diseño y fabricación de sprockets a la medida para industria pesada y ligera. Materiales especiales.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon"><i class="fas fa-puzzle-piece"></i></div>
-          <div class="prod-card-title">Aditamentos y Accesorios</div>
-          <div class="prod-card-sub">Diseño y fabricación de aditamentos especiales para cadenas acorde a cada proceso productivo.</div>
-        </div>
-      </div>
-      <div class="mt-4 animate-up delay-2">
-        <a data-wa="Hola RAMAG, necesito cotizar cadenas de ingeniería o agrícolas." class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Cotizar cadenas
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product 4: Bandas transportadoras -->
-  <section class="section product-section section--surface" id="bandas-transportadoras">
-    <div class="section-inner">
-      <div class="prod-header animate-up">
-        <div class="prod-brand-badge">BeltService Corporation</div>
-        <div>
-          <h2 class="section-heading" style="margin-bottom:.25rem">Bandas transportadoras para industria pesada y ligera</h2>
-          <p class="section-sub">Selección especial con especialistas técnicos para cada aplicación.</p>
-        </div>
-      </div>
-      <div class="products-grid animate-up delay-1">
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-stream"></i></div>
-          <div class="prod-card-title">Banda Lisa / Plana</div>
-          <div class="prod-card-sub">Para transporte de materiales a granel y piezas. Gomas de alto impacto, resistentes a abrasión.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-sort-amount-up"></i></div>
-          <div class="prod-card-title">Banda con Chevrones</div>
-          <div class="prod-card-sub">Diseño nervado en V para transporte inclinado. Evita el deslizamiento del material en pendientes.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-border-all"></i></div>
-          <div class="prod-card-title">Banda con Bordes / Gualderas</div>
-          <div class="prod-card-sub">Laterales elevados para transporte de materiales granulares y evitar derrames en bordes de transportador.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-thermometer-half"></i></div>
-          <div class="prod-card-title">Banda Resistente al Calor</div>
-          <div class="prod-card-sub">Para aplicaciones con materiales a alta temperatura. Industria cementera, minera y metalúrgica.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-tint-slash"></i></div>
-          <div class="prod-card-title">Banda Resistente a Aceites</div>
-          <div class="prod-card-sub">Compuesto especial resistente a hidrocarburos. Para industria automotriz, alimenticia y petroquímica.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#2ecc71"><i class="fas fa-ruler-combined"></i></div>
-          <div class="prod-card-title">Aditamentos Especiales</div>
-          <div class="prod-card-sub">Deflectores, separadores, rascadores y accesorios según la necesidad específica de la aplicación.</div>
-        </div>
-      </div>
-      <div class="mt-4 animate-up delay-2">
-        <a data-wa="Hola RAMAG, necesito cotizar bandas transportadoras para mi aplicación." class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Cotizar bandas transportadoras
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product 5: Transmisión variada -->
-  <section class="section product-section" id="transmision">
-    <div class="section-inner">
-      <div class="prod-header animate-up">
-        <div class="prod-brand-badge">Martin · Regal Rexnord</div>
-        <div>
-          <h2 class="section-heading" style="margin-bottom:.25rem">Productos de transmisión de potencia</h2>
-          <p class="section-sub">Soluciones completas para la industria pesada y ligera.</p>
-        </div>
-      </div>
-      <div class="products-grid animate-up delay-1">
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-bolt"></i></div>
-          <div class="prod-card-title">Motores Eléctricos</div>
-          <div class="prod-card-sub">Motores de inducción trifásicos y monofásicos. Múltiples potencias, velocidades y eficiencias energéticas.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-dot-circle"></i></div>
-          <div class="prod-card-title">Chumaceras de Rodillos Cónicos</div>
-          <div class="prod-card-sub">Chumaceras de pared y de piso para cargas radiales y axiales combinadas. Series estándar y especiales.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-compress-arrows-alt"></i></div>
-          <div class="prod-card-title">Acoplamientos</div>
-          <div class="prod-card-sub">Acoplamientos rígidos, flexibles y de dientes. Para conexión directa entre motor y reductor o carga.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-circle"></i></div>
-          <div class="prod-card-title">Poleas y Sheaves</div>
-          <div class="prod-card-sub">Poleas de acanalado simple y múltiple para bandas V, planas y síncronas. Hierro fundido y acero.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-stop-circle"></i></div>
-          <div class="prod-card-title">Clutches y Frenos Magnéticos</div>
-          <div class="prod-card-sub">Para control preciso de arranque, parada y posicionamiento en aplicaciones de ciclo repetitivo.</div>
-        </div>
-        <div class="product-card">
-          <div class="prod-card-icon" style="color:#9b59b6"><i class="fas fa-grip-lines"></i></div>
-          <div class="prod-card-title">Rodillos de Transportador</div>
-          <div class="prod-card-sub">Rodillos de carga, retorno y amortiguamiento. Rodillos motrices con cubierta de hule para mayor tracción.</div>
-        </div>
-      </div>
-      <div class="mt-4 animate-up delay-2">
-        <a data-wa="Hola RAMAG, necesito cotizar componentes de transmisión de potencia." class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Cotizar componentes
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Value add note -->
-  <section class="section section--primary">
-    <div class="section-inner">
-      <div class="intro-grid animate-up">
-        <div>
-          <span class="eyebrow">Nuestro diferenciador</span>
-          <h2 class="section-heading section-heading--white">No solo vendemos la pieza. Te ayudamos a elegirla.</h2>
-          <p class="section-sub section-sub--white">
-            Con más de 12 años de experiencia técnica, nuestro equipo analiza tu aplicación
-            y selecciona el producto exacto para maximizar la vida útil y el rendimiento de tu equipo.
-          </p>
-          <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem">
-            <a data-wa="Hola RAMAG, necesito asesoría técnica para seleccionar el producto adecuado para mi aplicación." class="btn btn-wa">
-              <i class="fab fa-whatsapp"></i> Asesoría técnica
-            </a>
-            <a href="contacto.html" class="btn btn-outline">
-              <i class="fas fa-envelope"></i> Enviar especificaciones
-            </a>
+        <!-- ── CASO 1 ── Tequilera -->
+        <article class="animate-up proy-card" data-industry="tequilera"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <!-- Cabecera -->
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-wine-bottle" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria tequilera</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Reemplazo urgente de motorreductor SEW en línea de embotellado</div>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="why-grid" style="margin-top:0">
-            <div class="why-item">
-              <span class="why-num">01</span>
-              <div>
-                <div class="why-title">Análisis de aplicación</div>
-                <div class="why-desc">Revisamos tus condiciones de operación para recomendar el producto óptimo.</div>
+          <!-- Cuerpo -->
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Paro no programado en turno nocturno. Motorreductor tipo K averiado sin refacción en almacén local. Cada hora de paro representaba pérdida de producción.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Diagnóstico remoto en &lt; 1 h, unidad SEW K compatible localizada en stock. Entrega express e instalación guiada por técnico en sitio.</p>
+            </div>
+            <!-- Métricas -->
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">&lt;6 h</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Tiempo de paro</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">100%</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Producción recuperada</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">SEW-K</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Equipo instalado</div>
               </div>
             </div>
-            <div class="why-item">
-              <span class="why-num">02</span>
-              <div>
-                <div class="why-title">Homologación</div>
-                <div class="why-desc">Identificamos equivalencias entre marcas para optimizar costos sin sacrificar calidad.</div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+        <!-- ── CASO 2 ── Cementera -->
+        <article class="animate-up delay-2 proy-card" data-industry="cementera"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-hard-hat" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria cementera</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Sustitución de bandas en planta de molienda por desgaste acelerado</div>
+            </div>
+          </div>
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Desgaste acelerado en banda de caucho por ambiente abrasivo con polvo de clinker. Reemplazos cada 3 meses elevaban el costo de mantenimiento.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Migración a banda modular Safari Belting con recubrimiento anti-abrasión. RAMAG realizó ingeniería de empalme y ajuste de tensores.</p>
+            </div>
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">3×</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Vida útil banda</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">40%</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Reducción costo MRO</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">Safari</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Marca aplicada</div>
               </div>
             </div>
-            <div class="why-item">
-              <span class="why-num">03</span>
-              <div>
-                <div class="why-title">Stock disponible</div>
-                <div class="why-desc">Inventario de partes críticas para entrega inmediata en urgencias.</div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+        <!-- ── CASO 3 ── Química -->
+        <article class="animate-up delay-4 proy-card" data-industry="quimica"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-flask" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria química</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Diagnóstico y reconstrucción de reductores en agitadores de reactor</div>
+            </div>
+          </div>
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Vibraciones anormales en reductores de agitadores. Incertidumbre sobre origen. Acceso limitado por ambiente clasificado.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Análisis de vibración y termografía in-situ. Desmontaje controlado, cambio de rodamientos y sellados. Reporte técnico con evidencia fotográfica.</p>
+            </div>
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">0</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Paros no planificados</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">12 m</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Sin falla posterior</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">2 uds</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Reductores tratados</div>
               </div>
             </div>
-            <div class="why-item">
-              <span class="why-num">04</span>
-              <div>
-                <div class="why-title">Soporte post-venta</div>
-                <div class="why-desc">Seguimiento a nuestra solución hasta confirmar el correcto funcionamiento.</div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+        <!-- ── CASO 4 ── Alimentos -->
+        <article class="animate-up proy-card" data-industry="alimentos"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-utensils" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria alimentaria</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Actualización de cadenas de transmisión en planta empacadora</div>
+            </div>
+          </div>
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Cadenas de acero inoxidable con corrosión en zona húmeda. Normativa de inocuidad exigía sustitución por materiales aptos para contacto indirecto con alimentos.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Selección de cadena SEID Serie 304SS grado alimentario. Dimensionamiento, suministro e instalación supervisada en ventana de mantenimiento programado.</p>
+            </div>
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">FDA</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Cumplimiento normativo</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">4 h</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Ventana instalación</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">SEID</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Marca aplicada</div>
               </div>
             </div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+        <!-- ── CASO 5 ── Automotriz -->
+        <article class="animate-up delay-2 proy-card" data-industry="automotriz"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-car" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria automotriz</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Rediseño de sistema de transmisión en línea de ensamble</div>
+            </div>
+          </div>
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Línea con variadores de velocidad desactualizados y motores de eficiencia IE1. Consumo energético elevado y tiempo de respuesta de paro fuera de especificación.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Ingeniería de sustitución a motorreductores SEW MoviGear IE4. Parametrización de variadores, ajuste de rampas y puesta en marcha supervisada.</p>
+            </div>
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">28%</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Ahorro energético</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">IE4</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Eficiencia alcanzada</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">SEW MG</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Plataforma</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+        <!-- ── CASO 6 ── Tequilera 2 -->
+        <article class="animate-up delay-4 proy-card" data-industry="tequilera"
+                 style="background:white;border-radius:1rem;overflow:hidden;border:1px solid var(--border);transition:var(--trans)"
+                 onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="background:var(--primary);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:.9rem">
+            <div style="width:2.4rem;height:2.4rem;background:rgba(255,255,255,.1);border-radius:.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem">
+              <i class="fas fa-wine-bottle" style="color:var(--accent);font-size:1rem"></i>
+            </div>
+            <div>
+              <span style="display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem">Industria tequilera</span>
+              <div style="font-size:.88rem;font-weight:700;color:white;line-height:1.35">Fabricación de transportador de canastas para horno de cocción</div>
+            </div>
+          </div>
+          <div style="padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.84rem">
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Reto</div>
+              <p style="color:var(--text-light);line-height:1.65">Transportador de canastas de agave fuera de catálogo estándar. Alta temperatura de operación (>180°C) y ciclo continuo exigían diseño a medida.</p>
+            </div>
+            <div>
+              <div style="font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem">Solución RAMAG</div>
+              <p style="color:var(--text-light);line-height:1.65">Diseño y fabricación en taller RAMAG. Cadena de alta temperatura BeltService, estructura en acero A36, motorreductor SEW con protección térmica.</p>
+            </div>
+            <div style="background:rgba(0,173,216,.06);border:1px solid rgba(0,173,216,.2);border-radius:.6rem;padding:.85rem 1rem;display:flex;gap:1.5rem;flex-wrap:wrap">
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">100%</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">A medida</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">180°C</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Temp. operación</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-size:1.4rem;font-weight:800;color:var(--primary);line-height:1">RAMAG</div>
+                <div style="font-size:.65rem;color:var(--text-muted);margin-top:.2rem">Fabricado en taller</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:.55rem 1.5rem;background:rgba(234,179,8,.05);border-top:1px dashed rgba(234,179,8,.3);font-size:.68rem;color:rgba(160,110,0,.75);display:flex;align-items:center;gap:.4rem">
+            <i class="fas fa-pencil-alt" style="font-size:.6rem"></i> Dato ilustrativo — reemplazar con proyecto real
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guía de contenido -->
+  <section class="section section--surface" style="padding-top:0">
+    <div class="section-inner" style="padding-top:0">
+      <div class="animate-up" style="background:white;border:1.5px dashed rgba(0,173,216,.35);border-radius:1rem;padding:1.5rem 2rem;display:flex;gap:1.25rem;align-items:flex-start">
+        <i class="fas fa-clipboard-list" style="color:var(--accent);font-size:1.4rem;flex-shrink:0;margin-top:.1rem"></i>
+        <div style="font-size:.83rem;color:var(--text-light);line-height:1.75">
+          <strong style="color:var(--text);display:block;margin-bottom:.4rem;font-size:.9rem">Guía para completar esta página con proyectos reales:</strong>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem .75rem">
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Industria</strong> del cliente</div>
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Equipo intervenido</strong> (marca + modelo)</div>
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Problema original</strong> (vibración, paro, desgaste)</div>
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Acción realizada</strong> por RAMAG</div>
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Resultado medible</strong> (%, tiempo, costo)</div>
+            <div><i class="fas fa-check-circle" style="color:var(--accent);margin-right:.35rem"></i><strong>Nombre del cliente</strong> (opcional / anonimizable)</div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <!-- CTA -->
   <div class="cta-band">
     <div class="cta-band-inner">
-      <h2>¿Necesitas una cotización?</h2>
-      <p>Comparte el número de modelo, medidas o especificaciones y te respondemos a la brevedad.</p>
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <p>Cuéntanos el reto y nuestro equipo técnico te propone la solución. Sin compromisos.</p>
       <div class="cta-band-btns">
-        <a data-wa="Hola RAMAG, quisiera cotizar un producto. Los detalles son:" class="btn btn-wa">
-          <i class="fab fa-whatsapp"></i> Enviar especificación
+        <a data-wa="Hola RAMAG, me gustaría platicar sobre un proyecto que tengo en mente." class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Platicar sobre mi proyecto
         </a>
         <a href="contacto.html" class="btn btn-outline">
           <i class="fas fa-envelope"></i> Formulario de contacto
@@ -628,7 +423,7 @@
   <footer>
     <div class="footer-top">
       <div>
-        <img src="img/logo_ramag_blanco.png" alt="RAMAG" class="footer-logo" />
+        <img src="img/RAMAG_LOGO_BLANCO.png" alt="RAMAG" class="footer-logo" />
         <p class="footer-desc">Soluciones MRO (Mantenimiento, Reparación y Operación) integrales en transmisión de potencia para la industria.</p>
       </div>
       <div>
@@ -636,6 +431,7 @@
         <div class="footer-links">
           <a href="index.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Inicio</a>
           <a href="alcance.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Alcance</a>
+          <a href="productos.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Proyectos</a>
           <a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Nosotros</a>
           <a href="contacto.html"><i class="fas fa-chevron-right" style="font-size:.6rem"></i> Contacto</a>
         </div>
@@ -657,7 +453,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" data-wa="Hola RAMAG, vi su catálogo y me gustaría obtener información sobre un producto." aria-label="WhatsApp">
+  <a class="wa-float" data-wa="Hola RAMAG, vi sus proyectos y me gustaría obtener información." aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
     <span>¿Necesitas ayuda?</span>
   </a>
@@ -665,5 +461,17 @@
   <button id="scroll-top" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    function filtrar(industria) {
+      const cards = document.querySelectorAll('.proy-card');
+      const btns  = document.querySelectorAll('[id^="f-"]');
+      btns.forEach(b => { b.style.background = 'transparent'; b.style.color = 'var(--text)'; b.style.borderColor = 'var(--border)'; });
+      const active = document.getElementById('f-' + industria);
+      if (active) { active.style.background = 'var(--primary)'; active.style.color = 'white'; active.style.borderColor = 'var(--primary)'; }
+      cards.forEach(c => {
+        c.style.display = (industria === 'todos' || c.dataset.industry === industria) ? '' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
