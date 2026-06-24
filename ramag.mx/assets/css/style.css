@@ -3,6 +3,22 @@
    Custom Stylesheet
 ========================================= */
 
+/* Fuente de marca (solo para la palabra "RAMAG") — Calligraphr */
+@font-face {
+  font-family: 'Ramag';
+  src: url('../fonts/Ramag-Regular.otf') format('opentype'),
+       url('../fonts/Ramag-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Aplicar a cualquier texto "RAMAG" del sitio (logo en texto, títulos) */
+.ramag-wordmark {
+  font-family: 'Ramag', var(--font);
+  font-weight: 400 !important; /* la fuente solo tiene Regular */
+  letter-spacing: 0 !important; /* manuscrita: sin tracking negativo */
+}
+
 /* ── Variables ── */
 :root {
   --primary:       #071C2C;
